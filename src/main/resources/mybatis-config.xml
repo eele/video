@@ -3,8 +3,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-<!-- 	<plugins> -->
-<!-- 		<plugin interceptor="edu.zhku.jsj144.lzc.video.util.paging.PagingInterceptor" /> -->
-<!-- 		<plugin interceptor="edu.zhku.jsj144.lzc.video.util.paging.ResultCountInterceptor" /> -->
-<!-- 	</plugins> -->
+	<plugins>
+		<plugin interceptor="edu.zhku.jsj144.lzc.video.plugin.BaseInterceptor">
+			<property name="tableNameMappingPath" value="tableNameMapping.properties"/>
+		</plugin>
+	</plugins>
 </configuration>
