@@ -11,13 +11,11 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/b/_$base")
 @Produces(MediaType.APPLICATION_JSON)
 public interface BaseService<T> {
 
 	@POST
-	public void create(@BeanParam T entity) throws InstantiationException, IllegalAccessException,
-			ClassNotFoundException, NoSuchFieldException, SecurityException;
+	public void create(@BeanParam T entity);
 
 	@GET
 	@Path("/{id}")

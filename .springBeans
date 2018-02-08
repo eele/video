@@ -9,7 +9,6 @@
 	<configs>
 		<config>src/main/resources/cxf-servlet.xml</config>
 		<config>src/test/java/_$web-servlet.xml1</config>
-		<config>src/test/java/applicationWebService.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>src/main/resources/spring-mybatis.xml</config>

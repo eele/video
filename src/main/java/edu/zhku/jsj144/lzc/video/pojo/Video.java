@@ -1,17 +1,17 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
-import javax.ws.rs.FormParam;
+import javax.ws.rs.QueryParam;
 
 public class Video {
-	@FormParam("id")
+	@QueryParam("id")
 	private String id; // 视频ID
-	@FormParam("title")
+	@QueryParam("title")
 	private String title; // 视频标题
-	@FormParam("uid")
+	@QueryParam("uid")
 	private String uid; // 用户ID
-	@FormParam("cid")
+	@QueryParam("cid")
 	private String cid; // 类别ID
-	@FormParam("pid")
+	@QueryParam("pid")
 	private String pid; // 播单ID
 
 	@Override
