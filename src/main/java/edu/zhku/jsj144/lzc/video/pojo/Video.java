@@ -2,6 +2,9 @@ package edu.zhku.jsj144.lzc.video.pojo;
 
 import javax.ws.rs.QueryParam;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties("hibernateLazyInitializer")
 public class Video {
 	@QueryParam("id")
 	private String id; // 视频ID

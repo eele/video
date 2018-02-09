@@ -27,7 +27,7 @@ public class CXFPatchListener implements ServletContextListener {
     }
 
 	/**
-     * 打补丁，修复@BeanParam无法绑定泛型Bean的问题
+     * 打补丁，解决@BeanParam无法绑定泛型Bean的问题
      */
     public void contextInitialized(ServletContextEvent sce)  { 
     	try {

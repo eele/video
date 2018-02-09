@@ -22,7 +22,7 @@ public interface BaseService<T> {
 	public T get(@PathParam("id") String id);
 
 	@GET
-	public List<T> get(T entity);
+	public List<T> get(@BeanParam T entity);
 
 	@PUT
 	@Path("/{id}")
@@ -33,5 +33,5 @@ public interface BaseService<T> {
 	public void delete(@PathParam("id") String id);
 
 	@DELETE
-	public void delete(T entity);
+	public void delete(@BeanParam T entity);
 }
