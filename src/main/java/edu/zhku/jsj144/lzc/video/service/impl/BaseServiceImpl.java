@@ -1,49 +1,43 @@
 package edu.zhku.jsj144.lzc.video.service.impl;
 
-import java.util.List;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import edu.zhku.jsj144.lzc.video.mapper.BaseMapper;
 import edu.zhku.jsj144.lzc.video.service.BaseService;
 
 public class BaseServiceImpl<T> implements BaseService<T> {
 
+	@Autowired
 	private BaseMapper<T> mapper;
 
 	@Override
-	public void create(T entity) {
+	public void create(T entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		// TODO Auto-generated method stub
-		System.out.println(entity);
-		// mapper.create(entity);
+		Method setter = entity.getClass().getMethod("setId", String.class);
+		setter.invoke(entity, UUID.randomUUID().toString());
+		mapper.create(entity);
 	}
 
 	@Override
-	public T get(String id) {
+	public void update(T entity) {
 		// TODO Auto-generated method stub
-		System.out.println("aa_" + id);
-		return null;
+		mapper.update(entity);
 	}
 
 	@Override
-	public List<T> get(T entity) {
+	public void deleteByID(T entity) {
 		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void update(String id, T entity) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void delete(String id) {
-		// TODO Auto-generated method stub
-
+		mapper.delete(entity);
 	}
 
 	@Override
 	public void delete(T entity) {
 		// TODO Auto-generated method stub
-
+		mapper.delete(entity);
 	}
 
 }

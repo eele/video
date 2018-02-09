@@ -11,7 +11,7 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
 	public Response toResponse(Exception e) {
 		// TODO Auto-generated method stub
 		e.printStackTrace();
-		ExceptionInfo exceptionInfo = new ExceptionInfo().status(e.getClass().getName()).msg(e.getMessage());
+		ExceptionInfo exceptionInfo = new ExceptionInfo().status(e.getClass().getSimpleName()).msg(e.getMessage());
 
 		return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(exceptionInfo)
 				.type("application/json;charset=UTF-8").build();

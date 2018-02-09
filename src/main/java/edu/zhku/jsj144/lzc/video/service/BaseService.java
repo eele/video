@@ -1,13 +1,12 @@
 package edu.zhku.jsj144.lzc.video.service;
 
-import java.util.List;
+import java.lang.reflect.InvocationTargetException;
+
 import javax.ws.rs.BeanParam;
 import javax.ws.rs.DELETE;
-import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -15,22 +14,15 @@ import javax.ws.rs.core.MediaType;
 public interface BaseService<T> {
 
 	@POST
-	public void create(@BeanParam T entity);
-
-	@GET
-	@Path("/{id}")
-	public T get(@PathParam("id") String id);
-
-	@GET
-	public List<T> get(@BeanParam T entity);
+	public void create(@BeanParam T entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
 
 	@PUT
 	@Path("/{id}")
-	public void update(@PathParam("id") String id, T entity);
+	public void update(@BeanParam T entity);
 
 	@DELETE
 	@Path("/{id}")
-	public void delete(@PathParam("id") String id);
+	public void deleteByID(@BeanParam T entity);
 
 	@DELETE
 	public void delete(@BeanParam T entity);

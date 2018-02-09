@@ -6,10 +6,6 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 
-<!-- 	<bean id="infoInterceptor" class="edu.zhku.jsj144.lzc.video.plugin.InfoInterceptor"> -->
-<!-- 		<constructor-arg value="pre-stream" /> -->
-<!-- 	</bean> -->
-
 	<jaxrs:server id="webService" address="/">
 		<!--输入拦截器设置 -->
 		<jaxrs:inInterceptors>
@@ -18,7 +14,7 @@
 
 		<!--输出拦截器设置 -->
 		<jaxrs:outInterceptors>
-<!-- 			<ref bean="infoInterceptor" /> -->
+
 		</jaxrs:outInterceptors>
 
 		<!--serviceBeans：暴露的WebService服务类 -->
