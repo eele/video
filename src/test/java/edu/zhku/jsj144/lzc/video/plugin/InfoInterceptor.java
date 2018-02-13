@@ -3,7 +3,6 @@ package edu.zhku.jsj144.lzc.video.plugin;
 import org.apache.cxf.interceptor.Fault;
 import org.apache.cxf.message.Message;
 import org.apache.cxf.phase.AbstractPhaseInterceptor;
-import edu.zhku.jsj144.lzc.video.pojo.ExceptionInfo;
 
 public class InfoInterceptor extends AbstractPhaseInterceptor<Message> {
 

@@ -18,7 +18,7 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 	public void create(T entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		// TODO Auto-generated method stub
 		Method setter = entity.getClass().getMethod("setId", String.class);
-		setter.invoke(entity, UUID.randomUUID().toString());
+		setter.invoke(entity, UUID.randomUUID().toString().replace("-", ""));
 		mapper.create(entity);
 	}
 

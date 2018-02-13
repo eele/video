@@ -1,9 +1,6 @@
 package edu.zhku.jsj144.lzc.video.service;
 
 import org.apache.ibatis.javassist.CannotCompileException;
-import org.apache.ibatis.javassist.ClassPool;
-import org.apache.ibatis.javassist.CtClass;
-import org.apache.ibatis.javassist.CtMethod;
 import org.apache.ibatis.javassist.NotFoundException;
 
 import edu.zhku.jsj144.lzc.video.service.impl.VideoServiceImpl;
@@ -24,6 +21,6 @@ public class Cp {
 //				"	}\r\n"
 //				);
 		
-		System.out.println((Class) ((java.lang.reflect.ParameterizedType) VideoServiceImpl.class.getGenericSuperclass()).getActualTypeArguments()[0]);
+		System.out.println((Class<?>) ((java.lang.reflect.ParameterizedType) VideoServiceImpl.class.getGenericSuperclass()).getActualTypeArguments()[0]);
 	}
 }

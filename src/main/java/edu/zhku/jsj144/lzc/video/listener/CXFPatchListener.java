@@ -3,8 +3,6 @@ package edu.zhku.jsj144.lzc.video.listener;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-import javax.ws.rs.BeanParam;
-
 import org.apache.ibatis.javassist.CannotCompileException;
 import org.apache.ibatis.javassist.ClassPool;
 import org.apache.ibatis.javassist.CtClass;
