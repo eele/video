@@ -1,6 +1,6 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 import javax.ws.rs.PathParam;
 
@@ -13,6 +13,6 @@ public class Message {
 	private String sid = null;
 	private String fid = null;
 	private String text = null;
-	private Date datetime = null;
+	private Timestamp datetime = null;
 
 }

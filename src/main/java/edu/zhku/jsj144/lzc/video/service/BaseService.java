@@ -10,11 +10,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
+
 @Produces(MediaType.APPLICATION_JSON)
 public interface BaseService<T> {
 
+	// Return UUID
 	@POST
-	public void create(@BeanParam T entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
+	public IDInfo create(@BeanParam T entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
 
 	@PUT
 	@Path("/{id}")

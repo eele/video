@@ -34,7 +34,7 @@
 
 		</jaxrs:languageMappings>
 
-		<!--对象转换 -->
+		<!--对象供给 -->
 		<jaxrs:providers>
 			<bean class="org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider" />
 			<bean class="edu.zhku.jsj144.lzc.video.exception.ExceptionHandler" />

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.Timestamp;
 import java.util.Properties;
 
 import org.apache.ibatis.executor.statement.StatementHandler;
@@ -87,7 +88,11 @@ public class BaseSqlInterceptor implements Interceptor {
 				sbu.deleteCharAt(sbu.length() - 1);
 				sbu.append(") values(");
 				for (Field f : fields) {
-					sbu.append('"').append(f.get(pObj)).append("\",");
+					if ((f.getType() == String.class || f.getType() == Timestamp.class) && f.get(pObj) != null) {
+						sbu.append('"').append(f.get(pObj)).append("\",");
+					} else {
+						sbu.append(f.get(pObj)).append(",");
+					}
 				}
 				sbu.deleteCharAt(sbu.length() - 1);
 				sbu.append(")");
@@ -100,7 +105,12 @@ public class BaseSqlInterceptor implements Interceptor {
 					if (f.getName().equals("id")) {
 						id = (String) f.get(pObj);
 					}
-					sbu.append(f.getName()).append('=').append('"').append(f.get(pObj)).append("\",");
+					
+					if ((f.getType() == String.class || f.getType() == Timestamp.class) && f.get(pObj) != null) {
+						sbu.append(f.getName()).append('=').append('"').append(f.get(pObj)).append("\",");
+					} else {
+						sbu.append(f.getName()).append('=').append(f.get(pObj)).append(",");
+					}
 				}
 				sbu.deleteCharAt(sbu.length() - 1);
 				sbu.append(" where id=\"").append(id).append("\"");

@@ -1,6 +1,6 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 import javax.ws.rs.PathParam;
 
@@ -11,7 +11,7 @@ public class Comment {
 	private String vid = null;
 	private String uid = null;
 	private String text = null;
-	private Date datetime = null;
+	private Timestamp datetime = null;
 
 	public String getId() {
 		return id;
@@ -45,11 +45,11 @@ public class Comment {
 		this.text = text;
 	}
 
-	public Date getDatetime() {
+	public Timestamp getDatetime() {
 		return datetime;
 	}
 
-	public void setDatetime(Date datetime) {
+	public void setDatetime(Timestamp datetime) {
 		this.datetime = datetime;
 	}
 

@@ -1,6 +1,6 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 import java.util.List;
 
 import javax.ws.rs.PathParam;
@@ -12,7 +12,7 @@ public class Playlist {
 	private String uid = null;
 	private String title = null;
 	private String description = null;
-	private Date datetime = null;
+	private Timestamp datetime = null;
 	private List<Video> videos = null;
 
 }

@@ -1,6 +1,6 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 import javax.ws.rs.PathParam;
 import javax.ws.rs.FormParam;
@@ -21,12 +21,12 @@ public class Video {
 	@FormParam("pid")
 	private String pid; // 播单ID
 	@FormParam("description")
-	private String description;
+	private String description; // 描述
 	@FormParam("permission")
-	private Boolean permission = false;
-	private int verify = 0;
+	private Boolean permission = false; // 权限
+	private int verify = 0; // 审核验证
 	@FormParam("datetime")
-	private Date datetime;
+	private Timestamp datetime; // 日期
 
 	public String getId() {
 		return id;
@@ -92,11 +92,11 @@ public class Video {
 		this.verify = verify;
 	}
 
-	public Date getDatetime() {
+	public Timestamp getDatetime() {
 		return datetime;
 	}
 
-	public void setDatetime(Date datetime) {
+	public void setDatetime(Timestamp datetime) {
 		this.datetime = datetime;
 	}
 

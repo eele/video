@@ -1,6 +1,6 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 import javax.ws.rs.PathParam;
 
@@ -10,7 +10,7 @@ public class Favorite {
 	private String id = null;
 	private String uid = null;
 	private String vid = null;
-	private Date datetime = null;
+	private Timestamp datetime = null;
 
 	public String getId() {
 		return id;
@@ -36,11 +36,11 @@ public class Favorite {
 		this.vid = vid;
 	}
 
-	public Date getDatetime() {
+	public Timestamp getDatetime() {
 		return datetime;
 	}
 
-	public void setDatetime(Date datetime) {
+	public void setDatetime(Timestamp datetime) {
 		this.datetime = datetime;
 	}
 
