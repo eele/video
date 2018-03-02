@@ -1,7 +1,9 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
+import java.util.Date;
+
 import javax.ws.rs.PathParam;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.FormParam;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
@@ -10,14 +12,21 @@ public class Video {
 
 	@PathParam("id")
 	private String id; // 视频ID
-	@QueryParam("title")
+	@FormParam("title")
 	private String title; // 视频标题
-	@QueryParam("uid")
+	@FormParam("uid")
 	private String uid; // 用户ID
-	@QueryParam("cid")
+	@FormParam("cid")
 	private String cid; // 类别ID
-	@QueryParam("pid")
+	@FormParam("pid")
 	private String pid; // 播单ID
+	@FormParam("description")
+	private String description;
+	@FormParam("permission")
+	private Boolean permission = false;
+	private int verify = 0;
+	@FormParam("datetime")
+	private Date datetime;
 
 	public String getId() {
 		return id;
@@ -59,9 +68,36 @@ public class Video {
 		this.pid = pid;
 	}
 
-	@Override
-	public String toString() {
-		return "Video [id=" + id + ", title=" + title + ", uid=" + uid + ", cid=" + cid + ", pid=" + pid + "]";
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Boolean getPermission() {
+		return permission;
+	}
+
+	public void setPermission(Boolean permission) {
+		this.permission = permission;
+	}
+
+	public int getVerify() {
+		return verify;
+	}
+
+	public void setVerify(int verify) {
+		this.verify = verify;
+	}
+
+	public Date getDatetime() {
+		return datetime;
+	}
+
+	public void setDatetime(Date datetime) {
+		this.datetime = datetime;
 	}
 
 }
