@@ -11,39 +11,39 @@ import edu.zhku.jsj144.lzc.video.mapper.BaseMapper;
 import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
 import edu.zhku.jsj144.lzc.video.service.BaseService;
 
-public class BaseServiceImpl<T> implements BaseService<T> {
+@SuppressWarnings("unchecked")
+public class BaseServiceImpl<enT, mapperT> implements BaseService<enT, mapperT> {
 
 	@Autowired
-	private BaseMapper<T> mapper;
+	protected mapperT mapper;
 
 	@Override
-	public IDInfo create(T entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public IDInfo create(enT entity) throws NoSuchMethodException, SecurityException, IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException {
 		// TODO Auto-generated method stub
 		String uuid = UUID.randomUUID().toString().replace("-", "");
 		Method setId = entity.getClass().getMethod("setId", String.class);
 		setId.invoke(entity, uuid);
-		Method setDatetime = entity.getClass().getMethod("setDatetime", Timestamp.class);
-		setDatetime.invoke(entity, new Timestamp(System.currentTimeMillis()));
-		mapper.create(entity);
+		try {
+			Method setDatetime = entity.getClass().getMethod("setDatetime", Timestamp.class);
+			setDatetime.invoke(entity, new Timestamp(System.currentTimeMillis()));
+		} catch (NoSuchMethodException e) {
+
+		}
+		((BaseMapper<enT>) mapper).create(entity);
 		return new IDInfo(uuid);
 	}
 
 	@Override
-	public void update(T entity) {
+	public void update(enT entity) {
 		// TODO Auto-generated method stub
-		mapper.update(entity);
+		((BaseMapper<enT>) mapper).update(entity);
 	}
 
 	@Override
-	public void deleteByID(T entity) {
+	public void deleteByID(enT entity) {
 		// TODO Auto-generated method stub
-		mapper.delete(entity);
-	}
-
-	@Override
-	public void delete(T entity) {
-		// TODO Auto-generated method stub
-		mapper.delete(entity);
+		((BaseMapper<enT>) mapper).delete(entity);
 	}
 
 }

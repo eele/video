@@ -2,7 +2,6 @@ package edu.zhku.jsj144.lzc.video.listener;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 import org.apache.ibatis.javassist.CannotCompileException;
 import org.apache.ibatis.javassist.ClassPool;
 import org.apache.ibatis.javassist.CtClass;
@@ -14,7 +13,6 @@ import org.apache.ibatis.javassist.NotFoundException;
  * @author ele
  *
  */
-@WebListener
 public class CXFPatchListener implements ServletContextListener {
 
 	/**

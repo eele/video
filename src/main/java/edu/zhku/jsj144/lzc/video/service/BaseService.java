@@ -13,20 +13,18 @@ import javax.ws.rs.core.MediaType;
 import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
 
 @Produces(MediaType.APPLICATION_JSON)
-public interface BaseService<T> {
+public interface BaseService<enT, mapperT> {
 
 	// Return UUID
 	@POST
-	public IDInfo create(@BeanParam T entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
+	public IDInfo create(@BeanParam enT entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
 
 	@PUT
 	@Path("/{id}")
-	public void update(@BeanParam T entity);
+	public void update(@BeanParam enT entity);
 
 	@DELETE
 	@Path("/{id}")
-	public void deleteByID(@BeanParam T entity);
+	public void deleteByID(@BeanParam enT entity);
 
-	@DELETE
-	public void delete(@BeanParam T entity);
 }
