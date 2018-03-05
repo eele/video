@@ -1,6 +1,5 @@
 package edu.zhku.jsj144.lzc.video.service.impl;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 import java.util.UUID;
@@ -18,8 +17,7 @@ public class BaseServiceImpl<enT, mapperT> implements BaseService<enT, mapperT> 
 	protected mapperT mapper;
 
 	@Override
-	public IDInfo create(enT entity) throws NoSuchMethodException, SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
+	public IDInfo create(enT entity) throws Exception {
 		// TODO Auto-generated method stub
 		String uuid = UUID.randomUUID().toString().replace("-", "");
 		Method setId = entity.getClass().getMethod("setId", String.class);

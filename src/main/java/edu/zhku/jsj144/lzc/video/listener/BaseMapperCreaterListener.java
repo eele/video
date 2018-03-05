@@ -17,7 +17,7 @@ import org.apache.ibatis.javassist.bytecode.annotation.ArrayMemberValue;
 import org.apache.ibatis.javassist.bytecode.annotation.StringMemberValue;
 
 /**
- * 为各个Mapper类添加create、update、delete方法
+ * 为各个Mapper类添加create、update、delete方法（批量代码生成）
  *
  */
 public class BaseMapperCreaterListener implements ServletContextListener {

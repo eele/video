@@ -1,7 +1,5 @@
 package edu.zhku.jsj144.lzc.video.service;
 
-import java.lang.reflect.InvocationTargetException;
-
 import javax.ws.rs.BeanParam;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.POST;
@@ -17,7 +15,7 @@ public interface BaseService<enT, mapperT> {
 
 	// Return UUID
 	@POST
-	public IDInfo create(@BeanParam enT entity) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
+	public IDInfo create(@BeanParam enT entity) throws Exception;
 
 	@PUT
 	@Path("/{id}")
