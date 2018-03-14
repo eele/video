@@ -1,4 +1,4 @@
-package edu.zhku.jsj144.lzc.video.listener;
+package edu.zhku.jsj144.lzc.video.pluginListener;
 
 import java.io.File;
 import javax.servlet.ServletContextEvent;
@@ -18,6 +18,8 @@ import org.apache.ibatis.javassist.bytecode.annotation.StringMemberValue;
 
 /**
  * 为各个Mapper类添加create、update、delete方法（批量代码生成）
+ * 
+ * @author ele
  *
  */
 public class BaseMapperCreaterListener implements ServletContextListener {

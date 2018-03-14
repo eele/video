@@ -42,13 +42,11 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
 	}
 	
 	public ExceptionInfo handleException(DataIntegrityViolationException e) {
-		ExceptionInfo exceptionInfo = new ExceptionInfo().status("DBERR").msg("数据存取异常");
-		return exceptionInfo;
+		return new ExceptionInfo().status("DBERR").msg("数据存取异常");
 	}
 	
 	public ExceptionInfo handleException(BadSqlGrammarException e) {
-		ExceptionInfo exceptionInfo = new ExceptionInfo().status("DBERR").msg("数据库异常");
-		return exceptionInfo;
+		return new ExceptionInfo().status("DBERR").msg("数据库异常");
 	}
 
 }

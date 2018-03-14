@@ -8,6 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import edu.zhku.jsj144.lzc.video.plugin.RequireToken;
 import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
 
 /**
@@ -17,6 +18,7 @@ import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
  * @param <enT> 实体类型
  * @param <mapperT> Mapper类型
  */
+@RequireToken
 @Produces(MediaType.APPLICATION_JSON)
 public interface BaseService<enT, mapperT> {
 

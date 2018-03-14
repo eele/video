@@ -1,4 +1,4 @@
-package edu.zhku.jsj144.lzc.video.listener;
+package edu.zhku.jsj144.lzc.video.pluginListener;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -10,6 +10,7 @@ import org.apache.ibatis.javassist.NotFoundException;
 
 /**
  * CXF补丁
+ * 
  * @author ele
  *
  */

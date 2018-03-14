@@ -3,10 +3,13 @@
   <display-name>video</display-name>
   
   <listener>
-    <listener-class>edu.zhku.jsj144.lzc.video.listener.CXFPatchListener</listener-class>
+    <listener-class>edu.zhku.jsj144.lzc.video.pluginListener.CXFPatchListener</listener-class>
   </listener>
   <listener>
-    <listener-class>edu.zhku.jsj144.lzc.video.listener.BaseMapperCreaterListener</listener-class>
+    <listener-class>edu.zhku.jsj144.lzc.video.pluginListener.BaseMapperCreaterListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>edu.zhku.jsj144.lzc.video.pluginListener.TokenQueryParamAddingListener</listener-class>
   </listener>
   
   
