@@ -5,11 +5,11 @@
 
 <mapper namespace="edu.zhku.jsj144.lzc.video.mapper.UserMapper">
 
-	<select id="selectUser" resultType="edu.zhku.jsj144.lzc.video.pojo.User">
-		select * from `user` where username = #{username}
+	<select id="selectUserByName" resultType="edu.zhku.jsj144.lzc.video.pojo.User">
+		select id, password from `user` where username = #{username}
 	</select>
 	
 	<select id="selectUserById" resultType="edu.zhku.jsj144.lzc.video.pojo.User">
-		select * from `user` where id = #{id}
+		select id, username, description from `user` where id = #{id}
 	</select>
 </mapper>

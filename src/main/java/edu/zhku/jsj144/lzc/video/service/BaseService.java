@@ -10,10 +10,22 @@ import javax.ws.rs.core.MediaType;
 
 import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
 
+/**
+ * 基本业务层接口
+ * @author ele
+ *
+ * @param <enT> 实体类型
+ * @param <mapperT> Mapper类型
+ */
 @Produces(MediaType.APPLICATION_JSON)
 public interface BaseService<enT, mapperT> {
 
-	// Return UUID
+	/**
+	 * 创建实体信息
+	 * @param entity 实体
+	 * @return 实体的ID信息
+	 * @throws Exception
+	 */
 	@POST
 	public IDInfo create(@BeanParam enT entity) throws Exception;
 

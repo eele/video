@@ -12,7 +12,7 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
 	@Override
 	public User getUser(String username) {
 		// TODO Auto-generated method stub
-		User user = super.mapper.selectUser(username);
+		User user = super.mapper.selectUserByName(username);
 		user.setPassword("");
 		return user;
 	}

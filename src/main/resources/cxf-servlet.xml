@@ -6,7 +6,7 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 
-	<jaxrs:server id="webService" address="/">
+	<jaxrs:server id="restfulService" address="/j">
 		<!--输入拦截器设置 -->
 		<jaxrs:inInterceptors>
 
@@ -21,6 +21,7 @@
 		<jaxrs:serviceBeans>
 			<ref bean="videoService" />
 			<ref bean="userService" />
+			<ref bean="sessionService" />
 		</jaxrs:serviceBeans>
 
 		<!--支持的协议 -->
@@ -41,4 +42,11 @@
 		</jaxrs:providers>
 
 	</jaxrs:server>
+
+	<jaxws:server id="rpcService" address="/r">
+		<!-- 提供服务的实现类 -->
+		<jaxws:serviceBean>
+			<ref bean="videoService" />
+		</jaxws:serviceBean>
+	</jaxws:server>
 </beans>

@@ -7,7 +7,7 @@ import javax.ws.rs.QueryParam;
 
 import edu.zhku.jsj144.lzc.video.pojo.User;
 
-@Path("user")
+@Path("users")
 public interface UserService {
 
 	@GET

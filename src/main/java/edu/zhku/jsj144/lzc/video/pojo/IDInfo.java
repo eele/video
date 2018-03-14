@@ -1,5 +1,10 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
+/**
+ * id号信息实体类
+ * @author ele
+ *
+ */
 public class IDInfo {
 	
 	private String id;
