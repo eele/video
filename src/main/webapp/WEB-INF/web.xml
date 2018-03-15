@@ -8,10 +8,6 @@
   <listener>
     <listener-class>edu.zhku.jsj144.lzc.video.pluginListener.BaseMapperCreaterListener</listener-class>
   </listener>
-  <listener>
-    <listener-class>edu.zhku.jsj144.lzc.video.pluginListener.TokenQueryParamAddingListener</listener-class>
-  </listener>
-  
   
   <context-param>
     <param-name>contextConfigLocation</param-name>

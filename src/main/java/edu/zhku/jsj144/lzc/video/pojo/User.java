@@ -9,7 +9,7 @@ public class User {
 	@FormParam("username")
 	private String username;
 	@FormParam("password")
-	private String password;
+	private String password = "";
 	@FormParam("description")
 	private String description;
 

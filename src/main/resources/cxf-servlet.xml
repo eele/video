@@ -6,10 +6,10 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 
-	<jaxrs:server id="restfulService" address="/j">
+	<jaxrs:server id="restfulService" address="/r">
 		<!--输入拦截器设置 -->
 		<jaxrs:inInterceptors>
-
+			<ref bean="tokenInInterceptor" />
 		</jaxrs:inInterceptors>
 
 		<!--输出拦截器设置 -->
@@ -38,12 +38,12 @@
 		<!--对象供给 -->
 		<jaxrs:providers>
 			<bean class="org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider" />
-			<bean class="edu.zhku.jsj144.lzc.video.exception.ExceptionHandler" />
+			<bean class="edu.zhku.jsj144.lzc.video.exception.handler.ExceptionHandler" />
 		</jaxrs:providers>
 
 	</jaxrs:server>
 
-	<jaxws:server id="rpcService" address="/r">
+	<jaxws:server id="rpcService" address="/p">
 		<!-- 提供服务的实现类 -->
 		<jaxws:serviceBean>
 			<ref bean="videoService" />

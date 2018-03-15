@@ -14,7 +14,7 @@ public class SessionServiceImpl implements SessionService {
 
 	@Autowired
 	private UserMapper mapper;
-	private final long TOKENTTL = 100000; // 令牌过期时间
+	private final long TOKENTTL = 60000; // 令牌过期时间
 	
 	@Override
 	public SessionInfo create(User user) {
@@ -26,7 +26,7 @@ public class SessionServiceImpl implements SessionService {
 			if (retUser.getPassword().equals(user.getPassword())) {
 				info.setStateMsg("OK");
 				info.setUid(retUser.getId());
-				info.setToken(TokenUtil.createToken(TOKENTTL));
+				info.setToken(TokenUtil.createToken(retUser.getId(), TOKENTTL));
 			} else {
 				info.setStateMsg("密码错误");
 			}
