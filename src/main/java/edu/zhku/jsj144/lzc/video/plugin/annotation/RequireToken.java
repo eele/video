@@ -18,8 +18,8 @@ import java.lang.annotation.Target;
 public @interface RequireToken {
 
     /**
-     * 验证当前用户ID以保证访问的资源属于当前用户
+     * 设置是否仅允许用户访问自己的资源
      * @return
      */
-    public boolean checkCurrentUid() default false;
+    public boolean ownResourceOnly() default false;
 }

@@ -11,9 +11,6 @@ import edu.zhku.jsj144.lzc.video.pojo.User;
 public interface UserService {
 
 	@GET
-	public User getUser(@QueryParam("username") String username);
-	
-	@GET
 	@Path("/{id}")
 	public User getUserById(@PathParam("id") String id);
 }

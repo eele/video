@@ -105,7 +105,14 @@ public class BaseMapperCreaterListener implements ServletContextListener {
 		ctMethod.getMethodInfo().addAttribute(attr);
 		ctClass.addMethod(ctMethod);
 	}
-	
+
+    /**
+     * 生成Insert操作的SQL语句
+     * @param classPool
+     * @param ctClass
+     * @return
+     * @throws NotFoundException
+     */
 	private String createInsertSql(ClassPool classPool, CtClass ctClass) throws NotFoundException {
 		String genericType = ctClass.getGenericSignature();
 		genericType = genericType.substring(genericType.lastIndexOf("/") + 1, genericType.length() - 3);
@@ -123,20 +130,36 @@ public class BaseMapperCreaterListener implements ServletContextListener {
 		sqlb.append(")");
 		return sqlb.toString();
 	}
-	
+
+    /**
+     * 生成Update操作的SQL语句
+     * @param classPool
+     * @param ctClass
+     * @return
+     * @throws NotFoundException
+     */
 	private String createUpdateSql(ClassPool classPool, CtClass ctClass) throws NotFoundException {
 		String genericType = ctClass.getGenericSignature();
 		genericType = genericType.substring(genericType.lastIndexOf("/") + 1, genericType.length() - 3);
 		CtClass entityClass = classPool.get("edu.zhku.jsj144.lzc.video.pojo." + genericType);
 		StringBuilder sqlb = new StringBuilder("update " + genericType + " set ");
 		for (CtField f: entityClass.getDeclaredFields()) {
-			sqlb.append(f.getName() + "=").append("#{" + f.getName() + "},");
+			if (! f.getName().equals("datetime")) {
+                sqlb.append(f.getName() + "=").append("#{" + f.getName() + "},");
+            }
 		}
 		sqlb.deleteCharAt(sqlb.length() - 1);
 		sqlb.append(" where id=#{id}");
 		return sqlb.toString();
 	}
-	
+
+    /**
+     * 生成Delete操作的SQL语句
+     * @param classPool
+     * @param ctClass
+     * @return
+     * @throws NotFoundException
+     */
 	private String createDeleteSql(ClassPool classPool, CtClass ctClass) throws NotFoundException {
 		String genericType = ctClass.getGenericSignature();
 		genericType = genericType.substring(genericType.lastIndexOf("/") + 1, genericType.length() - 3);

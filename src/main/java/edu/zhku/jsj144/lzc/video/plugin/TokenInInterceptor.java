@@ -1,6 +1,5 @@
 package edu.zhku.jsj144.lzc.video.plugin;
 
-import edu.zhku.jsj144.lzc.video.exception.IllegalUserIDException;
 import edu.zhku.jsj144.lzc.video.exception.RequireTokenException;
 import edu.zhku.jsj144.lzc.video.plugin.annotation.RequireToken;
 import edu.zhku.jsj144.lzc.video.util.TokenUtil;
@@ -12,7 +11,6 @@ import org.apache.cxf.transport.http.AbstractHTTPDestination;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.POST;
 import java.lang.reflect.Method;
 
 /**
@@ -34,17 +32,24 @@ public class TokenInInterceptor extends AbstractPhaseInterceptor<Message> {
             Class<?> interfaceClass = method.getDeclaringClass().getInterfaces()[0];
             // 获取对应业务类的接口方法
             Method iMethod = interfaceClass.getDeclaredMethod(method.getName(), method.getParameterTypes());
+            // 获取注解
+            RequireToken iMethodAnnotation = iMethod.getDeclaredAnnotation(RequireToken.class);
+            RequireToken iClassAnnotation = interfaceClass.getDeclaredAnnotation(RequireToken.class);
 
             // 若该方法需要令牌验证
-            if (iMethod.getDeclaredAnnotation(RequireToken.class) != null
-                    || interfaceClass.getAnnotation(RequireToken.class) != null) {
+            if (iMethodAnnotation != null || iClassAnnotation != null) {
                 HttpServletRequest request = (HttpServletRequest) message.get(AbstractHTTPDestination.HTTP_REQUEST);
                 // 验证Token合法性
                 String token = request.getParameter("token");
                 if (token == null || token.equals("")) {
                     throw new Fault(new RequireTokenException());
                 }
-                TokenUtil.checkToken(token);
+                message.put("uid", TokenUtil.checkToken(token));
+                if (iMethodAnnotation != null) {
+                    message.put("ownResourceOnly", iMethodAnnotation.ownResourceOnly());
+                } else {
+                    message.put("ownResourceOnly", iClassAnnotation.ownResourceOnly());
+                }
             }
         } catch (NoSuchMethodException e) {
             e.printStackTrace();

@@ -1,19 +1,18 @@
 package edu.zhku.jsj144.lzc.video.exception.handler;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.ext.ExceptionMapper;
-
-import edu.zhku.jsj144.lzc.video.exception.IllegalUserIDException;
+import edu.zhku.jsj144.lzc.video.exception.IllegalResourceAccessException;
 import edu.zhku.jsj144.lzc.video.exception.RequireTokenException;
+import edu.zhku.jsj144.lzc.video.pojo.ExceptionInfo;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.BadSqlGrammarException;
 
-import edu.zhku.jsj144.lzc.video.pojo.ExceptionInfo;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.ext.ExceptionMapper;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class ExceptionHandler implements ExceptionMapper<Exception> {
 
@@ -53,10 +52,10 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
                 .status("TOKENERR").msg("令牌已过期");
     }
 
-    public ExceptionInfo handleException(IllegalUserIDException e) {
+    public ExceptionInfo handleException(IllegalResourceAccessException e) {
         return new ExceptionInfo()
                 .httpStatus(Response.Status.FORBIDDEN)
-                .status("UIDERR").msg("不是合法的当前用户ID");
+                .status("ACCERR").msg("访问其他用户资源的权限已禁止");
     }
 
     @Override

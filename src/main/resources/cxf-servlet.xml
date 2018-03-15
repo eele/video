@@ -10,6 +10,7 @@
 		<!--输入拦截器设置 -->
 		<jaxrs:inInterceptors>
 			<ref bean="tokenInInterceptor" />
+            <ref bean="resourceAccessInInterceptor" />
 		</jaxrs:inInterceptors>
 
 		<!--输出拦截器设置 -->

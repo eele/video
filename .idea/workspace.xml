@@ -7,232 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a80a83-7af5-4a72-a019-bc74aac84164" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/video_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/video_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_core_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_soap_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_xml_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_databinding_jaxb_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_jaxrs_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_jaxws_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_simple_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_transports_http_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_addr_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_policy_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_wsdl_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_neethi_neethi_3_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ws_xmlschema_xmlschema_core_2_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_12_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__se_jiderhamn_classloader_leak_prevention_classloader_leak_prevention_core_2_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__se_jiderhamn_classloader_leak_prevention_classloader_leak_prevention_servlet_2_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/RequireTokenException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/a/TokenQueryParamAddingListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/exception/RequireTokenException.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/a/AuthAspect.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/a/TokenQueryParamAddingListener.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/application-context.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/c3p0.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/cxf-servlet.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/exception/RequireTokenException.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/mapper/BaseMapper.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/mapper/UserMapper.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/mapper/VideoMapper.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pluginListener/CXFPatchListener.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/Comment.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/ExceptionInfo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/Favorite.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/History.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/IDInfo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/Message.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/Playlist.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/SessionInfo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/Subscribe.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/pojo/Video.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/BaseService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/CommentService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/FavoriteService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/HistoryService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/SessionService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/SubscribeService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/UserService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/VideoService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/service/impl/VideoServiceImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/edu/zhku/jsj144/lzc/video/util/TokenUtil.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/log4j.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/mapping/UserMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/mapping/VideoMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/mybatis-config.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/classes/spring-mybatis.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/asm-5.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/aspectjrt-1.8.10.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/aspectjweaver-1.8.10.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/c3p0-0.9.5.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/classloader-leak-prevention-core-2.1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/classloader-leak-prevention-servlet-2.1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/commons-logging-1.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-core-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-bindings-soap-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-bindings-xml-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-databinding-jaxb-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-frontend-jaxrs-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-frontend-jaxws-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-frontend-simple-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-transports-http-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-ws-addr-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-ws-policy-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/cxf-rt-wsdl-3.2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jackson-annotations-2.8.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jackson-core-2.8.9.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jackson-core-asl-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jackson-databind-2.8.9.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jackson-jaxrs-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jackson-xc-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/javax.annotation-api-1.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/javax.ws.rs-api-2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/jjwt-0.9.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/log4j-1.2.17.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/mchange-commons-java-0.2.11.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/mybatis-3.4.5.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/mybatis-spring-1.3.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/mysql-connector-java-6.0.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/neethi-3.1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-aop-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-beans-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-context-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-core-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-expression-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-jdbc-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-tx-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-web-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/spring-webmvc-4.3.12.RELEASE.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/stax2-api-3.1.4.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/woodstox-core-5.0.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/wsdl4j-1.6.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/xml-resolver-1.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/lib/xmlschema-core-2.2.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/view/index.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/video/WEB-INF/web.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video.iml" />
-      <change beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.springBeans" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/ExceptionHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/AuthAspect.java" afterPath="$PROJECT_DIR$/src/test/java/a/AuthAspect.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/RequireToken.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/TokenQueryParamAddingListener.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/ExceptionInfo.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/ExceptionInfo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/User.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalResourceAccessException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/ResourceAccessInInterceptor.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/util/TokenUtil.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/util/TokenUtil.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/cxf-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/cxf-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cxf-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/cxf-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/exception/ExceptionHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/mapper/BaseMapper.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/mapper/BaseMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/mapper/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/mapper/VideoMapper.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/mapper/VideoMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/plugin/AuthAspect.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/plugin/RequireToken.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pluginListener/CXFPatchListener.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pluginListener/CXFPatchListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pluginListener/TokenQueryParamAddingListener.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Comment.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Comment.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/ExceptionInfo.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/ExceptionInfo.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Favorite.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Favorite.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/History.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/History.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/IDInfo.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/IDInfo.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Message.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Message.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Playlist.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Playlist.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/SessionInfo.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/SessionInfo.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Subscribe.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Subscribe.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Video.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/pojo/Video.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/BaseService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/BaseService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/CommentService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/CommentService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/FavoriteService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/FavoriteService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/HistoryService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/HistoryService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/SessionService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/SessionService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/SubscribeService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/SubscribeService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/VideoService.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/VideoService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/VideoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/service/impl/VideoServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/util/TokenUtil.class" afterPath="$PROJECT_DIR$/target/classes/edu/zhku/jsj144/lzc/video/util/TokenUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/video/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/edu.zhku.jsj144.lzc/video/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/edu.zhku.jsj144.lzc/video/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/_$web-servlet.xml1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/a/A.class" afterPath="$PROJECT_DIR$/target/test-classes/a/A.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/a/FileTransferServer$Task.class" afterPath="$PROJECT_DIR$/target/test-classes/a/FileTransferServer$Task.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/a/FileTransferServer.class" afterPath="$PROJECT_DIR$/target/test-classes/a/FileTransferServer.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/db/DBTest.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/db/DBTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/plugin/InfoInterceptor.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/plugin/InfoInterceptor.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/service/BaseServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/service/BaseServiceTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/service/Cp.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/zhku/jsj144/lzc/video/service/Cp.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -246,72 +33,7 @@
     <favorites_list name="video" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TokenInInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="46" column="44" lean-forward="false" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#876#877#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -327,6 +49,7 @@
       <find>aa</find>
       <find>aa</find>
       <find>httpStatusCode</find>
+      <find>aa123</find>
     </findStrings>
     <replaceStrings>
       <replace>httpStatus</replace>
@@ -357,20 +80,24 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/AuthException.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/ExceptionInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/RequireTokenException.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/RequireTokenException.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/util/TokenUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/VideoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/VideoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/cxf-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/cxf-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/Video.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/ResourceAccessInInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -401,6 +128,12 @@
         <option name="downloadSourcesAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="22" />
@@ -481,6 +214,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluginListener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -505,6 +262,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="video" type="b2602c69:ProjectViewProjectNode" />
@@ -736,12 +501,12 @@
       <workItem from="1521022118877" duration="581000" />
       <workItem from="1521022753701" duration="132000" />
       <workItem from="1521022947396" duration="7723000" />
-      <workItem from="1521034144339" duration="38245000" />
+      <workItem from="1521034144339" duration="49922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49830000" />
+    <option name="totallyTimeSpent" value="61507000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -758,14 +523,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3214671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3214671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -776,7 +541,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22014925" sideWeight="0.49358973" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -823,35 +588,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/a/TokenQueryParamAddingListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/a/TokenQueryParamAddingListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="48" column="53" lean-forward="true" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -964,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/Video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1060,9 +793,9 @@
         <state relative-caret-position="351">
           <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
+            <element signature="e#839#840#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1079,14 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="314" column="0" lean-forward="true" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="119" column="28" lean-forward="false" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1114,14 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-130">
           <caret line="91" column="31" lean-forward="false" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1158,79 +875,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalResourceAccessException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/cxf-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="88">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="242">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/cxf-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="46" column="44" lean-forward="false" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="242">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="157" column="23" lean-forward="true" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/ResourceAccessInInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="48" column="88" lean-forward="true" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1521016875760" expanded="true" signature="301:361" ph="select id, p... user" />
+            <marker date="1521016875760" expanded="true" signature="456:517" ph="select id, u... user" />
+          </folding>
         </state>
       </provider>
     </entry>

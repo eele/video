@@ -8,12 +8,6 @@ import edu.zhku.jsj144.lzc.video.service.UserService;
 
 @Service("userService")
 public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implements UserService {
-	
-	@Override
-	public User getUser(String username) {
-		// TODO Auto-generated method stub
-		return super.mapper.selectUserByName(username);
-	}
 
 	@Override
 	public User getUserById(String id) {

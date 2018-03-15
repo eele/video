@@ -19,7 +19,6 @@ import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
  * @param <mapperT> Mapper类型
  */
 @Produces(MediaType.APPLICATION_JSON)
-@RequireToken
 public interface BaseService<enT, mapperT> {
 
 	/**
@@ -29,14 +28,17 @@ public interface BaseService<enT, mapperT> {
 	 * @throws Exception
 	 */
 	@POST
+    @RequireToken
 	public IDInfo create(@BeanParam enT entity) throws Exception;
 
 	@PUT
 	@Path("/{id}")
+    @RequireToken(ownResourceOnly = true)
 	public void update(@BeanParam enT entity);
 
 	@DELETE
 	@Path("/{id}")
+    @RequireToken(ownResourceOnly = true)
 	public void deleteByID(@BeanParam enT entity);
 
 }
