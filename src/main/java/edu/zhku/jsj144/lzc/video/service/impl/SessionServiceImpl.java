@@ -14,7 +14,7 @@ public class SessionServiceImpl implements SessionService {
 
 	@Autowired
 	private UserMapper mapper;
-	private final long TOKENTTL = 60000; // 令牌过期时间
+	private final long TOKENTTL = 3600000; // 令牌过期时间
 	
 	@Override
 	public SessionInfo create(User user) {

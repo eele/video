@@ -7,19 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a80a83-7af5-4a72-a019-bc74aac84164" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalResourceAccessException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/ResourceAccessInInterceptor.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/annotation/RequireToken.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cxf-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/cxf-servlet.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +24,58 @@
     <favorites_list name="video" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="84" column="54" lean-forward="false" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenInInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="44" column="65" lean-forward="false" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="21" column="67" lean-forward="true" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/SessionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/RequireTokenException.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/RequireTokenException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/util/TokenUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/VideoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/VideoService.java" />
@@ -90,14 +131,15 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/IllegalUserIDException.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/BaseService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/cxf-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/Video.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/BaseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/ResourceAccessInInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java" />
       </list>
     </option>
   </component>
@@ -135,7 +177,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="22" />
     <option name="y" value="21" />
     <option name="width" value="801" />
@@ -223,14 +265,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pluginListener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="video" type="b2602c69:ProjectViewProjectNode" />
@@ -501,12 +535,12 @@
       <workItem from="1521022118877" duration="581000" />
       <workItem from="1521022753701" duration="132000" />
       <workItem from="1521022947396" duration="7723000" />
-      <workItem from="1521034144339" duration="49922000" />
+      <workItem from="1521034144339" duration="56032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61507000" />
+    <option name="totallyTimeSpent" value="67617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,7 +552,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
@@ -530,7 +565,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3214671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3214671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,7 +574,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901832" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22014925" sideWeight="0.49358973" order="0" side_tool="false" content_ui="combo" />
@@ -593,23 +628,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pluginListener/BaseMapperCreaterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="49" column="65" lean-forward="true" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/a/TokenQueryParamAddingListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.springBeans" />
     <entry file="file://$PROJECT_DIR$/.classpath" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-context.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -800,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-core/3.2.1/cxf-core-3.2.1-sources.jar!/org/apache/cxf/phase/PhaseInterceptorChain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -883,14 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/cxf-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -899,23 +901,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/Video.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-346">
           <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding>
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -941,30 +933,6 @@
         <state relative-caret-position="264">
           <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/ResourceAccessInInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="48" column="88" lean-forward="true" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,6 +976,70 @@
             <marker date="1521016875760" expanded="true" signature="301:361" ph="select id, p... user" />
             <marker date="1521016875760" expanded="true" signature="456:517" ph="select id, u... user" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/ResourceAccessInInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/exception/handler/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="84" column="54" lean-forward="false" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/http/HttpServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="182" column="18" lean-forward="false" selection-start-line="182" selection-start-column="18" selection-end-line="182" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/plugin/TokenInInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="44" column="65" lean-forward="false" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/SessionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/SessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zhku/jsj144/lzc/video/service/impl/SessionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="67" lean-forward="true" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>

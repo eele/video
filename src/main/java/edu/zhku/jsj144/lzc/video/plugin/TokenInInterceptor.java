@@ -40,7 +40,7 @@ public class TokenInInterceptor extends AbstractPhaseInterceptor<Message> {
             if (iMethodAnnotation != null || iClassAnnotation != null) {
                 HttpServletRequest request = (HttpServletRequest) message.get(AbstractHTTPDestination.HTTP_REQUEST);
                 // 验证Token合法性
-                String token = request.getParameter("token");
+                String token = request.getHeader("Auth-Token");
                 if (token == null || token.equals("")) {
                     throw new Fault(new RequireTokenException());
                 }

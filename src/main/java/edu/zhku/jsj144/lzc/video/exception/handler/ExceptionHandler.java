@@ -80,7 +80,9 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
 		}
 		
 		if (flag == 0) {
-			exceptionInfo = new ExceptionInfo().status("SERVERERR").msg("服务端异常");
+			exceptionInfo = new ExceptionInfo()
+                    .httpStatus(Response.Status.INTERNAL_SERVER_ERROR)
+                    .status("SERVERERR").msg("服务端异常");
 		}
 
 		return Response.status(exceptionInfo.getHttpStatus()).entity(exceptionInfo)
