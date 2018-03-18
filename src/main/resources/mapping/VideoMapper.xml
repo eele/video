@@ -5,6 +5,8 @@
 
 <mapper namespace="edu.zhku.jsj144.lzc.video.mapper.VideoMapper">
 
+    <resultMap id="videoMap" type="edu.zhku.jsj144.lzc.video.pojo.Video"/>
+
 	<select id="selectVideoById" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
 		select * from `video` where id = #{id}
 	</select>
@@ -16,4 +18,12 @@
 	<select id="updateUploadState">
 		update `video` set hasUploaded = #{hasUploaded} where id = #{vid}
 	</select>
+
+	<select id="selectUploadingVideosByUID" resultMap="videoMap">
+		select * from `video` where uid = #{uid} and hasUploaded = 0 order by datetime desc limit #{pstart}, #{psize}
+	</select>
+
+    <select id="selectUploadedVideosByUID" resultMap="videoMap">
+        select * from `video` where uid = #{uid} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
+    </select>
 </mapper>
