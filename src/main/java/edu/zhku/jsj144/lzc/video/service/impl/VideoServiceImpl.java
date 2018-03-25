@@ -37,4 +37,9 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
 		return super.mapper.selectUploadedVideosByUID(uid, pstart, psize);
 	}
 
+	@Override
+	public List<Video> getVideosByCID(String cid, int pstart, int psize) {
+		return super.mapper.selectVideosByCID(cid, pstart, psize);
+	}
+
 }

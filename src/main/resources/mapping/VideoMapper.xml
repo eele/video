@@ -26,4 +26,8 @@
     <select id="selectUploadedVideosByUID" resultMap="videoMap">
         select * from `video` where uid = #{uid} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
     </select>
+
+    <select id="selectVideosByCID" resultMap="videoMap">
+        select * from `video` where cid = #{cid} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
+    </select>
 </mapper>

@@ -23,4 +23,7 @@ public interface VideoService {
     @GET
     @Path("/uploaded")
     public List<Video> getUploadedVideosByUID(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+
+    @GET
+    public List<Video> getVideosByCID(@QueryParam("cid") String cid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 }

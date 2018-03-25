@@ -1,19 +1,15 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
+import javax.ws.rs.PathParam;
 import java.sql.Timestamp;
 
-import javax.ws.rs.FormParam;
-import javax.ws.rs.PathParam;
-
-public class Comment {
+public class CommentEx {
 	
 	@PathParam("id")
 	private String id = null;
-	@FormParam("vid")
 	private String vid = null;
-	@FormParam("uid")
 	private String uid = null;
-	@FormParam("text")
+	private String username = null;
 	private String text = null;
 	private Timestamp datetime = null;
 
@@ -39,6 +35,14 @@ public class Comment {
 
 	public void setUid(String uid) {
 		this.uid = uid;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getText() {

@@ -37,4 +37,13 @@ public interface VideoMapper extends BaseMapper<Video> {
 	 * @return
 	 */
 	public List<Video> selectUploadedVideosByUID(@Param("uid") String uid, @Param("pstart") int pstart, @Param("psize") int psize);
+
+    /**
+     * 按类别查询视频
+     * @param cid
+     * @param pstart
+     * @param psize
+     * @return
+     */
+    public List<Video> selectVideosByCID(@Param("cid") String cid, @Param("pstart") int pstart, @Param("psize") int psize);
 }

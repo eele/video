@@ -21,8 +21,10 @@
 		<!--serviceBeans：暴露的WebService服务类 -->
 		<jaxrs:serviceBeans>
 			<ref bean="videoService" />
+            <ref bean="categoryService" />
 			<ref bean="userService" />
 			<ref bean="sessionService" />
+            <ref bean="commentService" />
 		</jaxrs:serviceBeans>
 
 		<!--支持的协议 -->
