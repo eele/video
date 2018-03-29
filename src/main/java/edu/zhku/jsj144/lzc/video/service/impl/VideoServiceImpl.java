@@ -42,4 +42,10 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
 		return super.mapper.selectVideosByCID(cid, pstart, psize);
 	}
 
+    @Override
+    public Video getOneVideo(String id) {
+        return super.mapper.selectVideo(id);
+    }
+
+
 }

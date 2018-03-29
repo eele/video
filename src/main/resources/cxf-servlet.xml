@@ -25,6 +25,7 @@
 			<ref bean="userService" />
 			<ref bean="sessionService" />
             <ref bean="commentService" />
+            <ref bean="favoriteService" />
 		</jaxrs:serviceBeans>
 
 		<!--支持的协议 -->

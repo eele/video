@@ -30,4 +30,8 @@
     <select id="selectVideosByCID" resultMap="videoMap">
         select * from `video` where cid = #{cid} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
     </select>
+
+    <select id="selectVideo" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
+        select * from `video` where id = #{id}
+    </select>
 </mapper>

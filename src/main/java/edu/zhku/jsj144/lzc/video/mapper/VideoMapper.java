@@ -46,4 +46,6 @@ public interface VideoMapper extends BaseMapper<Video> {
      * @return
      */
     public List<Video> selectVideosByCID(@Param("cid") String cid, @Param("pstart") int pstart, @Param("psize") int psize);
+
+    public Video selectVideo(String id);
 }

@@ -5,6 +5,7 @@ import edu.zhku.jsj144.lzc.video.pojo.Video;
 import javax.jws.WebService;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 import java.util.List;
 
@@ -26,4 +27,8 @@ public interface VideoService {
 
     @GET
     public List<Video> getVideosByCID(@QueryParam("cid") String cid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+
+    @GET
+    @Path("/{id}")
+    public Video getOneVideo(@PathParam("id") String id);
 }

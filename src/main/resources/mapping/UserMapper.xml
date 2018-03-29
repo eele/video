@@ -5,6 +5,8 @@
 
 <mapper namespace="edu.zhku.jsj144.lzc.video.mapper.UserMapper">
 
+    <resultMap id="userMap" type="edu.zhku.jsj144.lzc.video.pojo.UserEx"/>
+
 	<select id="selectUserByName" resultType="edu.zhku.jsj144.lzc.video.pojo.User">
 		select id, password from `user` where username = #{username}
 	</select>
@@ -12,4 +14,16 @@
 	<select id="selectUserById" resultType="edu.zhku.jsj144.lzc.video.pojo.User">
 		select id, username, description from `user` where id = #{id}
 	</select>
+
+	<select id="selectUsers" resultMap="userMap">
+		select `user`.id, username, description, (select count(s_uid)) as scNum
+		from `user`,`subscribe` where `user`.id = s_uid group by s_uid
+		order by scNum desc limit #{pstart}, #{psize}
+	</select>
+
+    <select id="selectUsersByUID" resultMap="userMap">
+        select `user`.id, username, description, (select count(s_uid)) as scNum
+        from `user`,`subscribe` where `user`.id = s_uid and `subscribe`.uid = #{mineId} group by s_uid
+        order by scNum desc limit #{pstart}, #{psize}
+    </select>
 </mapper>

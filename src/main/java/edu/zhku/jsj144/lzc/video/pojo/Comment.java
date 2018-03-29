@@ -15,6 +15,7 @@ public class Comment {
 	private String uid = null;
 	@FormParam("text")
 	private String text = null;
+
 	private Timestamp datetime = null;
 
 	public String getId() {
