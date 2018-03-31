@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.zhku.jsj144.lzc.video.mapper.SubscribeMapper">
+
+	<resultMap id="favoriteMap" type="edu.zhku.jsj144.lzc.video.pojo.Subscribe"/>
+
+	<select id="selectSubscribeID" resultType="String">
+		select id from `subscribe` where uid = #{uid} and s_uid = #{s_uid}
+	</select>
+
+</mapper>

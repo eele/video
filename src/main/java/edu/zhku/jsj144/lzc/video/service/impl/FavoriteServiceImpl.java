@@ -2,6 +2,7 @@ package edu.zhku.jsj144.lzc.video.service.impl;
 
 import edu.zhku.jsj144.lzc.video.mapper.FavoriteMapper;
 import edu.zhku.jsj144.lzc.video.pojo.Favorite;
+import edu.zhku.jsj144.lzc.video.pojo.Video;
 import edu.zhku.jsj144.lzc.video.service.FavoriteService;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ public class FavoriteServiceImpl extends BaseServiceImpl<Favorite, FavoriteMappe
     }
 
     @Override
-    public List<Favorite> getFavorites(String uid, int pstart, int psize) {
-        return super.mapper.selectFavorites(uid, pstart, psize);
+    public List<Video> getFavoriteVideos(String uid, int pstart, int psize) {
+        return super.mapper.selectFavoriteVideos(uid, pstart, psize);
     }
 }

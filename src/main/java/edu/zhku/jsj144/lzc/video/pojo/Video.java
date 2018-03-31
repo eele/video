@@ -18,8 +18,6 @@ public class Video {
 	private String uid; // 用户ID
 	@FormParam("cid")
 	private String cid; // 类别ID
-	@FormParam("pid")
-	private String pid; // 播单ID
 	@FormParam("description")
 	private String description; // 描述
 	@FormParam("permission")
@@ -58,14 +56,6 @@ public class Video {
 
 	public void setCid(String cid) {
 		this.cid = cid;
-	}
-
-	public String getPid() {
-		return pid;
-	}
-
-	public void setPid(String pid) {
-		this.pid = pid;
 	}
 
 	public String getDescription() {

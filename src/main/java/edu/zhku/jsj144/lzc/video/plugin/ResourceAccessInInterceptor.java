@@ -29,7 +29,7 @@ public class ResourceAccessInInterceptor extends AbstractPhaseInterceptor<Messag
                     (MetadataMap) message.get("jaxrs.template.parameters");
             String id = (String) metadataMap.get("id").get(0);
             // 若资源id中uid部分与用户ID不匹配，说明该资源不属于本用户资源
-            if (! id.substring(0, 32).equals(message.get("uid"))) {
+            if (id.length() > 32 && ! id.substring(0, 32).equals(message.get("uid"))) {
                 throw new Fault(new IllegalResourceAccessException());
             }
         }

@@ -16,8 +16,9 @@
 	</select>
 
 	<select id="selectUsers" resultMap="userMap">
-		select `user`.id, username, description, (select count(s_uid)) as scNum
-		from `user`,`subscribe` where `user`.id = s_uid group by s_uid
+		select `user`.id, username, description,
+        (select count(s_uid) from `subscribe` where s_uid = `user`.id) as scNum
+		from `user`
 		order by scNum desc limit #{pstart}, #{psize}
 	</select>
 

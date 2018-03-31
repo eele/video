@@ -11,10 +11,10 @@
 		select id from `favorite` where vid = #{vid} and uid = #{uid}
 	</select>
 
-	<select id="selectFavorites" resultMap="favoriteMap">
+	<select id="selectFavoriteVideos" resultMap="favoriteMap">
 		select video.id, title, video.uid, video.description, video.datetime
 		from `favorite`, `video`
 		where `favorite`.vid = `video`.id
-		and `favorite`.uid = #{uid} order by datetime desc limit #{pstart}, #{psize}
+		and `favorite`.uid = #{uid} order by `favorite`.datetime desc limit #{pstart}, #{psize}
 	</select>
 </mapper>

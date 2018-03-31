@@ -1,6 +1,6 @@
 package edu.zhku.jsj144.lzc.video.service;
 
-import edu.zhku.jsj144.lzc.video.pojo.Favorite;
+import edu.zhku.jsj144.lzc.video.pojo.Video;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,5 +14,6 @@ public interface FavoriteService {
     public String getFavoriteID(@QueryParam("uid") String uid, @QueryParam("vid") String vid);
 
     @GET
-    public List<Favorite> getFavorites(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+    @Path("/videos")
+    public List<Video> getFavoriteVideos(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 }
