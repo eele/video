@@ -11,4 +11,6 @@ public interface FavoriteMapper extends BaseMapper<Favorite> {
     public String selectFavoriteID(@Param("uid") String uid, @Param("vid") String vid);
 
     public List<Video> selectFavoriteVideos(@Param("uid") String uid, @Param("pstart") int pstart, @Param("psize") int psize);
+
+    public void deleteFavoriteVideo(@Param("uid") String uid, @Param("vid") String vid);
 }

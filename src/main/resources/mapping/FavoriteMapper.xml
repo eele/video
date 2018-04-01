@@ -17,4 +17,8 @@
 		where `favorite`.vid = `video`.id
 		and `favorite`.uid = #{uid} order by `favorite`.datetime desc limit #{pstart}, #{psize}
 	</select>
+
+    <delete id="deleteFavoriteVideo">
+        delete from `favorite` where vid = #{vid} and uid = #{uid}
+    </delete>
 </mapper>

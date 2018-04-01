@@ -7,10 +7,6 @@
 
     <resultMap id="videoMap" type="edu.zhku.jsj144.lzc.video.pojo.Video"/>
 
-	<select id="selectVideoById" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
-		select * from `video` where id = #{id}
-	</select>
-	
 	<select id="selectUploadingVideo" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
 		select * from `video` where id = #{id} and hasUploaded = 0
 	</select>
@@ -34,4 +30,8 @@
     <select id="selectVideo" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
         select * from `video` where id = #{id}
     </select>
+
+	<select id="selectVideosByTitle" resultMap="videoMap">
+		select * from `video` where title like #{title} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
+	</select>
 </mapper>

@@ -27,4 +27,12 @@
         from `user`,`subscribe` where `user`.id = s_uid and `subscribe`.uid = #{mineId} group by s_uid
         order by scNum desc limit #{pstart}, #{psize}
     </select>
+
+    <select id="selectUsersByUsername" resultMap="userMap">
+        select `user`.id, username, description,
+        (select count(s_uid) from `subscribe` where s_uid = `user`.id) as scNum
+        from `user`
+        where username like #{username}
+        order by scNum desc limit #{pstart}, #{psize}
+    </select>
 </mapper>

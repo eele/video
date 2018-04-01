@@ -15,4 +15,6 @@ public interface UserMapper extends BaseMapper<User> {
 	public List<UserEx> selectUsers(@Param("pstart") int pstart, @Param("psize") int psize);
 
 	public List<UserEx> selectUsersByUID(@Param("mineId") String mineId, @Param("pstart") int pstart, @Param("psize") int psize);
+
+	public List<UserEx> selectUsersByUsername(@Param("username") String username, @Param("pstart") int pstart, @Param("psize") int psize);
 }

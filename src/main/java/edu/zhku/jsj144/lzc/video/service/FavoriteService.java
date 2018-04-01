@@ -1,10 +1,9 @@
 package edu.zhku.jsj144.lzc.video.service;
 
+import edu.zhku.jsj144.lzc.video.plugin.annotation.RequireToken;
 import edu.zhku.jsj144.lzc.video.pojo.Video;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import java.util.List;
 
 @Path("favorites")
@@ -16,4 +15,8 @@ public interface FavoriteService {
     @GET
     @Path("/videos")
     public List<Video> getFavoriteVideos(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+
+    @DELETE
+    @RequireToken
+    public void deleteFavoriteVideo(@FormParam("uid") String uid, @FormParam("vid") String vid);
 }

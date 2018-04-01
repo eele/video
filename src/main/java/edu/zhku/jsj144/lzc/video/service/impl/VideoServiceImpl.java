@@ -19,7 +19,7 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
 
 	@Override
 	public boolean isPreparedToUpload(String vid) {
-		return super.mapper.selectUploadingVideo(vid) != null;
+		return super.mapper.selectVideo(vid) != null;
 	}
 
 	@Override
@@ -45,6 +45,11 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
     @Override
     public Video getOneVideo(String id) {
         return super.mapper.selectVideo(id);
+    }
+
+    @Override
+    public List<Video> searchVideos(String title, int pstart, int psize) {
+        return mapper.selectVideosByTitle("%" + title + "%", pstart, psize);
     }
 
 

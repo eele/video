@@ -18,11 +18,11 @@ public interface VideoService {
 	public void setUploadFinished(String vid);
 
 	@GET
-    @Path("/uploading")
+    @Path("/p/uploading")
 	public List<Video> getUploadingVideosByUID(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
     @GET
-    @Path("/uploaded")
+    @Path("/p/uploaded")
     public List<Video> getUploadedVideosByUID(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
     @GET
@@ -31,4 +31,8 @@ public interface VideoService {
     @GET
     @Path("/{id}")
     public Video getOneVideo(@PathParam("id") String id);
+
+    @GET
+    @Path("/all/found")
+    public List<Video> searchVideos(@QueryParam("title") String title, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 }

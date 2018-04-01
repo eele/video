@@ -20,4 +20,9 @@ public class FavoriteServiceImpl extends BaseServiceImpl<Favorite, FavoriteMappe
     public List<Video> getFavoriteVideos(String uid, int pstart, int psize) {
         return super.mapper.selectFavoriteVideos(uid, pstart, psize);
     }
+
+    @Override
+    public void deleteFavoriteVideo(String uid, String vid) {
+        mapper.deleteFavoriteVideo(uid, vid);
+    }
 }
