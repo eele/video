@@ -66,7 +66,7 @@ public class BaseMapperCreaterListener implements ServletContextListener {
 	 * @return
 	 */
 	private String[] getClasses() {
-		String classpath = Thread.currentThread().getContextClassLoader().getResource("\\").getPath();
+		String classpath = Thread.currentThread().getContextClassLoader().getResource("/").getPath();
 		File classDir = new File(classpath + "edu/zhku/jsj144/lzc/video/mapper");
 		File[] classes = classDir.listFiles();
 		String[] cNames = new String[classes.length];

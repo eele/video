@@ -1,5 +1,6 @@
 package edu.zhku.jsj144.lzc.video.service;
 
+import edu.zhku.jsj144.lzc.video.plugin.annotation.RequireToken;
 import edu.zhku.jsj144.lzc.video.pojo.Video;
 
 import javax.jws.WebService;
@@ -19,6 +20,7 @@ public interface VideoService {
 
 	@GET
     @Path("/p/uploading")
+    @RequireToken
 	public List<Video> getUploadingVideosByUID(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
     @GET

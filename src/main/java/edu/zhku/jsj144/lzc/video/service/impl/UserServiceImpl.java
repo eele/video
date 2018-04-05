@@ -12,6 +12,7 @@ import edu.zhku.jsj144.lzc.video.service.UserService;
 import javax.ws.rs.core.Response;
 import java.io.*;
 import java.lang.reflect.Method;
+import java.nio.file.AccessDeniedException;
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.UUID;
@@ -60,9 +61,13 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
     @Override
     public Response getPortrait(String id) {
         File file = new File("d:/" + id);
-        Response.ResponseBuilder response = Response.ok(file);
-        response.header("Content-Disposition", "attachment;filename='test.txt'");
-        return response.build();
+        if (file.exists()) {
+            Response.ResponseBuilder response = Response.ok(file);
+            response.header("Content-Disposition", "attachment;filename='img'");
+            return response.build();
+        } else {
+            return Response.ok("").build();
+        }
     }
 
     private void writeToFile(InputStream ins, String path) throws IOException {

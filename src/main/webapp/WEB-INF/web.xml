@@ -19,11 +19,11 @@
     </init-param>
     <init-param>
       <param-name>cors.supportedMethods</param-name>
-      <param-value>GET, POST, HEAD, PUT, DELETE</param-value>
+      <param-value>GET, POST, HEAD, PUT, DELETE, OPTIONS</param-value>
     </init-param>
     <init-param>
       <param-name>cors.supportedHeaders</param-name>
-      <param-value>Accept, Origin, X-Requested-With, Content-Type, Last-Modified</param-value>
+      <param-value>Auth-Token, Accept, Origin, X-Requested-With, Content-Type, Last-Modified</param-value>
     </init-param>
     <init-param>
       <param-name>cors.exposedHeaders</param-name>
