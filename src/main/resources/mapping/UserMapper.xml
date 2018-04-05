@@ -35,4 +35,9 @@
         where username like #{username}
         order by scNum desc limit #{pstart}, #{psize}
     </select>
+
+    <update id="updatePassword">
+        update `user` set password = #{pwd}
+        where id = #{id}
+    </update>
 </mapper>

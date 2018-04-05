@@ -7,24 +7,16 @@
 
     <resultMap id="videoMap" type="edu.zhku.jsj144.lzc.video.pojo.Video"/>
 
-	<select id="selectUploadingVideo" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
-		select * from `video` where id = #{id} and hasUploaded = 0
-	</select>
-	
-	<select id="updateUploadState">
-		update `video` set hasUploaded = #{hasUploaded} where id = #{vid}
-	</select>
-
 	<select id="selectUploadingVideosByUID" resultMap="videoMap">
-		select * from `video` where uid = #{uid} and hasUploaded = 0 order by datetime desc limit #{pstart}, #{psize}
+		select * from `video` where uid = #{uid} order by datetime desc limit #{pstart}, #{psize}
 	</select>
 
     <select id="selectUploadedVideosByUID" resultMap="videoMap">
-        select * from `video` where uid = #{uid} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
+        select * from `video` where uid = #{uid} order by datetime desc limit #{pstart}, #{psize}
     </select>
 
     <select id="selectVideosByCID" resultMap="videoMap">
-        select * from `video` where cid = #{cid} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
+        select * from `video` where cid = #{cid} order by datetime desc limit #{pstart}, #{psize}
     </select>
 
     <select id="selectVideo" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
@@ -32,6 +24,6 @@
     </select>
 
 	<select id="selectVideosByTitle" resultMap="videoMap">
-		select * from `video` where title like #{title} and hasUploaded = 1 order by datetime desc limit #{pstart}, #{psize}
+		select * from `video` where title like #{title} order by datetime desc limit #{pstart}, #{psize}
 	</select>
 </mapper>

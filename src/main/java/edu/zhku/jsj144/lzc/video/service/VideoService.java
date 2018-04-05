@@ -3,6 +3,7 @@ package edu.zhku.jsj144.lzc.video.service;
 import edu.zhku.jsj144.lzc.video.plugin.annotation.RequireToken;
 import edu.zhku.jsj144.lzc.video.pojo.Video;
 
+import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,14 +15,18 @@ import java.util.List;
 @Path("videos")
 public interface VideoService {
 
-	public boolean isPreparedToUpload(String vid);
-	
-	public void setUploadFinished(String vid);
+    /**
+     * 验证Token，Token合法则返回视频ID给上传服务器
+     * @param token
+     * @return
+     */
+    @WebMethod
+	public String checkToken(String token);
 
 	@GET
-    @Path("/p/uploading")
+    @Path("/p/v")
     @RequireToken
-	public List<Video> getUploadingVideosByUID(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+	public void verifyToken();
 
     @GET
     @Path("/p/uploaded")

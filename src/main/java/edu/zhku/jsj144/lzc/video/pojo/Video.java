@@ -23,7 +23,6 @@ public class Video {
 	@FormParam("permission")
 	private Boolean permission = false; // 权限
 	private int verify = 0; // 审核验证
-	@FormParam("datetime")
 	private Timestamp datetime; // 日期
 
 	public String getId() {

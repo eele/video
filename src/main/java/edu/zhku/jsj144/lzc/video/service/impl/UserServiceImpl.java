@@ -28,28 +28,33 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
 		Method setId = entity.getClass().getMethod("setId", String.class);
 		setId.invoke(entity, uid);
 
-		super.mapper.create(entity);
+		mapper.create(entity);
 		return new IDInfo(uid);
 	}
 
 	@Override
 	public User getUserById(String id) {
 		// TODO Auto-generated method stub
-		return super.mapper.selectUserById(id);
+		return mapper.selectUserById(id);
 	}
 
 	@Override
 	public List<UserEx> getUsers(String mineId, int pstart, int psize) {
 		if (mineId.equals("all")) {
-			return super.mapper.selectUsers(pstart, psize);
+			return mapper.selectUsers(pstart, psize);
 		} else {
-			return super.mapper.selectUsersByUID(mineId, pstart, psize);
+			return mapper.selectUsersByUID(mineId, pstart, psize);
 		}
 	}
 
     @Override
     public List<UserEx> searchUsers(String username, int pstart, int psize) {
         return mapper.selectUsersByUsername("%" + username + "%", pstart, psize);
+    }
+
+    @Override
+    public void changePassword(String id, String pwd) {
+        mapper.updatePassword(id, pwd);
     }
 
     @Override

@@ -20,17 +20,17 @@ public class TokenUtil {
 
     /**
      * 创建令牌
-     * @param uid  用户id
+     * @param id
      * @param ttlMillis  令牌过期时间，单位毫秒
      * @return
      */
-    public static String createToken(String uid, long ttlMillis) {
+    public static String createToken(String id, long ttlMillis) {
         long nowMillis = System.currentTimeMillis(); // 生成Token的时间
         Date now = new Date(nowMillis);
 
         JwtBuilder builder = Jwts.builder()
                 .setId(UUID.randomUUID().toString())
-                .setSubject(uid)
+                .setSubject(id)
                 .signWith(SignatureAlgorithm.HS512, key)
                 .setIssuedAt(now);
 

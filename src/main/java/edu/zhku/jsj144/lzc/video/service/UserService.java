@@ -26,6 +26,11 @@ public interface UserService {
     @Path("/all/found")
     public List<UserEx> searchUsers(@QueryParam("username") String username, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
+    @PATCH
+    @Path("/{id}")
+    @RequireToken(ownResourceOnly = true)
+    public void changePassword(@PathParam("id") String id, @QueryParam("pwd") String pwd);
+
     /**
      * 上传用户头像
      * @param id
@@ -34,7 +39,7 @@ public interface UserService {
     @POST
     @Path("/{id}/portrait")
     @Consumes("multipart/form-data")
-    @RequireToken
+    @RequireToken(ownResourceOnly = true)
     public void uploadPortrait(@PathParam("id") String id, @Multipart(value="file",type="image/jpeg")Attachment image) throws IOException;
 
     /**
