@@ -10,10 +10,18 @@
 	<select id="selectUserByName" resultType="edu.zhku.jsj144.lzc.video.pojo.User">
 		select id, password from `user` where username = #{username}
 	</select>
+
+    <select id="selectAdminByName" resultType="edu.zhku.jsj144.lzc.video.pojo.Admin">
+        select id, password from `admin` where username = #{username}
+    </select>
 	
 	<select id="selectUserById" resultType="edu.zhku.jsj144.lzc.video.pojo.User">
 		select id, username, description from `user` where id = #{id}
 	</select>
+
+    <select id="selectAdminById" resultType="edu.zhku.jsj144.lzc.video.pojo.Admin">
+        select id, username from `admin` where id = #{id}
+    </select>
 
 	<select id="selectUsers" resultMap="userMap">
 		select `user`.id, username, description,
@@ -30,7 +38,8 @@
 
     <select id="selectUsersByUsername" resultMap="userMap">
         select `user`.id, username, description,
-        (select count(s_uid) from `subscribe` where s_uid = `user`.id) as scNum
+        (select count(s_uid) from `subscribe` where s_uid = `user`.id) as scNum,
+        (select count(uid) from `video` where uid = `user`.id) as videoNum
         from `user`
         where username like #{username}
         order by scNum desc limit #{pstart}, #{psize}
@@ -38,6 +47,11 @@
 
     <update id="updatePassword">
         update `user` set password = #{pwd}
+        where id = #{id}
+    </update>
+
+    <update id="updateAdminPassword">
+        update `admin` set password = #{pwd}
         where id = #{id}
     </update>
 </mapper>

@@ -1,10 +1,18 @@
 package edu.zhku.jsj144.lzc.video.pojo;
 
+import javax.ws.rs.FormParam;
+import javax.ws.rs.PathParam;
+import java.sql.Timestamp;
+
 public class Category {
 
+    @PathParam("id")
     private String id; // 类别id
+    @FormParam("name")
     private String name; // 类别名
+    @FormParam("description")
     private String description; // 类别描述
+    private Timestamp datetime = null;
 
     public String getId() {
         return id;
@@ -28,5 +36,13 @@ public class Category {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Timestamp getDatetime() {
+        return datetime;
+    }
+
+    public void setDatetime(Timestamp datetime) {
+        this.datetime = datetime;
     }
 }

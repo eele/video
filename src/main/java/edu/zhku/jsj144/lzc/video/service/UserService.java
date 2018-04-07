@@ -4,6 +4,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
 import edu.zhku.jsj144.lzc.video.plugin.annotation.RequireToken;
+import edu.zhku.jsj144.lzc.video.pojo.Admin;
 import edu.zhku.jsj144.lzc.video.pojo.User;
 import edu.zhku.jsj144.lzc.video.pojo.UserEx;
 import org.apache.cxf.jaxrs.ext.multipart.Attachment;
@@ -20,16 +21,31 @@ public interface UserService {
 	public User getUserById(@PathParam("id") String id);
 
     @GET
+    @RequireToken
+    @Path("/admin/{id}")
+    public Admin getAdminById(@PathParam("id") String id);
+
+    @GET
     public List<UserEx> getUsers(@QueryParam("mineId") String mineId, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
     @GET
     @Path("/all/found")
     public List<UserEx> searchUsers(@QueryParam("username") String username, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
-    @PATCH
-    @Path("/{id}")
+    @PUT
+    @Path("/{id}/password")
     @RequireToken(ownResourceOnly = true)
-    public void changePassword(@PathParam("id") String id, @QueryParam("pwd") String pwd);
+    public void changePassword(@PathParam("id") String id, @FormParam("pwd") String pwd);
+
+    @PUT
+    @Path("/admin/{id}/password")
+    @RequireToken(ownResourceOnly = true)
+    public void changeAdminPassword(@PathParam("id") String id, @FormParam("pwd") String pwd);
+
+    @DELETE
+    @Path("/{id}/alldata")
+    @RequireToken(ownResourceOnly = true)
+    public void deleteAllData(@BeanParam User user);
 
     /**
      * 上传用户头像

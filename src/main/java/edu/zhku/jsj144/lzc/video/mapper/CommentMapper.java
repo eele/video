@@ -9,4 +9,6 @@ import java.util.List;
 public interface CommentMapper extends BaseMapper<Comment> {
 
     public List<CommentEx> selectCommentsByVID(@Param("vid") String vid, @Param("pstart") int pstart, @Param("psize") int psize);
+
+    public void deleteByUID(String uid);
 }

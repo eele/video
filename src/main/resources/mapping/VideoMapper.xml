@@ -6,17 +6,16 @@
 <mapper namespace="edu.zhku.jsj144.lzc.video.mapper.VideoMapper">
 
     <resultMap id="videoMap" type="edu.zhku.jsj144.lzc.video.pojo.Video"/>
-
-	<select id="selectUploadingVideosByUID" resultMap="videoMap">
-		select * from `video` where uid = #{uid} order by datetime desc limit #{pstart}, #{psize}
-	</select>
+    <resultMap id="videoExMap" type="edu.zhku.jsj144.lzc.video.pojo.VideoEx">
+        <id column="name" property="category" />
+    </resultMap>
 
     <select id="selectUploadedVideosByUID" resultMap="videoMap">
-        select * from `video` where uid = #{uid} order by datetime desc limit #{pstart}, #{psize}
+        select * from `video` where uid = #{uid} and verify = 0 or verify = -1 or verify = 1 order by datetime desc limit #{pstart}, #{psize}
     </select>
 
     <select id="selectVideosByCID" resultMap="videoMap">
-        select * from `video` where cid = #{cid} order by datetime desc limit #{pstart}, #{psize}
+        select * from `video` where cid = #{cid} and verify = 1 order by datetime desc limit #{pstart}, #{psize}
     </select>
 
     <select id="selectVideo" resultType="edu.zhku.jsj144.lzc.video.pojo.Video">
@@ -24,6 +23,30 @@
     </select>
 
 	<select id="selectVideosByTitle" resultMap="videoMap">
-		select * from `video` where title like #{title} order by datetime desc limit #{pstart}, #{psize}
+		select * from `video` where title like #{title} and verify = 1 order by datetime desc limit #{pstart}, #{psize}
 	</select>
+
+    <select id="selectReviewedVideos" resultMap="videoExMap">
+        select * from `video`, `category`, `user`
+        where `video`.cid = `category`.id and `video`.uid = `user`.id and verify = 1 and `video`.uid like #{uid} and title like #{title}
+        order by `video`.datetime desc limit #{pstart}, #{psize}
+    </select>
+
+    <select id="selectUnreviewedVideos" resultMap="videoExMap">
+        select * from `video`, `category`, `user`
+        where `video`.cid = `category`.id and `video`.uid = `user`.id and verify = 0 and `video`.uid like #{uid} and title like #{title}
+        order by `video`.datetime desc limit #{pstart}, #{psize}
+    </select>
+
+    <delete id="deleteByUID">
+        delete from `video` where uid = #{uid}
+    </delete>
+
+    <update id="updateReviewPass">
+        update `video` set verify = 1 where id= #{id}
+    </update>
+
+    <update id="updateReviewNoPass">
+        update `video` set verify = -1 where id= #{id}
+    </update>
 </mapper>

@@ -2,13 +2,11 @@ package edu.zhku.jsj144.lzc.video.service;
 
 import edu.zhku.jsj144.lzc.video.plugin.annotation.RequireToken;
 import edu.zhku.jsj144.lzc.video.pojo.Video;
+import edu.zhku.jsj144.lzc.video.pojo.VideoEx;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import java.util.List;
 
 @WebService
@@ -33,6 +31,18 @@ public interface VideoService {
     public List<Video> getUploadedVideosByUID(@QueryParam("uid") String uid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
     @GET
+    @Path("/p/reviewed")
+    @RequireToken
+    public List<VideoEx> getReviewedVideos(@QueryParam("uid") String uid, @QueryParam("title") String title,
+                                           @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+
+    @GET
+    @Path("/p/unreviewed")
+    @RequireToken
+    public List<VideoEx> getUnreviewedVideos(@QueryParam("uid") String uid, @QueryParam("title") String title,
+                                             @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+
+    @GET
     public List<Video> getVideosByCID(@QueryParam("cid") String cid, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
 
     @GET
@@ -42,4 +52,8 @@ public interface VideoService {
     @GET
     @Path("/all/found")
     public List<Video> searchVideos(@QueryParam("title") String title, @QueryParam("pstart") int pstart, @QueryParam("psize") int psize);
+
+    @PUT
+    @Path("/{id}/review")
+    public void setReviewPass(@PathParam("id") String id, @FormParam("result") boolean result);
 }

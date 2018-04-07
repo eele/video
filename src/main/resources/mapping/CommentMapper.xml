@@ -12,4 +12,8 @@
 		from `comment`, `user` where `comment`.uid = `user`.id and vid = #{vid}
 		order by datetime desc limit #{pstart}, #{psize}
 	</select>
+
+	<delete id="deleteByUID">
+        delete from `comment` where uid = #{uid}
+    </delete>
 </mapper>

@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface CategoryMapper extends BaseMapper<Category> {
 
-    public List<Category> selectCategories();
+    public List<Category> selectCategories(String name);
 }

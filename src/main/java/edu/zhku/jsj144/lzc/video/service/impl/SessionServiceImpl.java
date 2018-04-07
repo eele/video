@@ -1,5 +1,6 @@
 package edu.zhku.jsj144.lzc.video.service.impl;
 
+import edu.zhku.jsj144.lzc.video.pojo.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,5 +34,23 @@ public class SessionServiceImpl implements SessionService {
 		}
 		return info;
 	}
-	
+
+	@Override
+	public SessionInfo createByAdmin(Admin admin) {
+		SessionInfo info = new SessionInfo();
+		Admin retAdmin = mapper.selectAdminByName(admin.getUsername());
+		if (retAdmin == null) {
+			info.setStateMsg("用户不存在");
+		} else {
+			if (retAdmin.getPassword().equals(admin.getPassword())) {
+				info.setStateMsg("OK");
+				info.setUid(retAdmin.getId());
+				info.setToken(TokenUtil.createToken("a#" + retAdmin.getId(), TOKENTTL));
+			} else {
+				info.setStateMsg("密码错误");
+			}
+		}
+		return info;
+	}
+
 }

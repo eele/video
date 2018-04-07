@@ -1,24 +1,32 @@
 package edu.zhku.jsj144.lzc.video.service.impl;
 
+import edu.zhku.jsj144.lzc.video.mapper.*;
+import edu.zhku.jsj144.lzc.video.pojo.Admin;
 import edu.zhku.jsj144.lzc.video.pojo.IDInfo;
-import edu.zhku.jsj144.lzc.video.pojo.UserEx;
-import org.apache.cxf.jaxrs.ext.multipart.Attachment;
-import org.springframework.stereotype.Service;
-
-import edu.zhku.jsj144.lzc.video.mapper.UserMapper;
 import edu.zhku.jsj144.lzc.video.pojo.User;
+import edu.zhku.jsj144.lzc.video.pojo.UserEx;
 import edu.zhku.jsj144.lzc.video.service.UserService;
+import org.apache.cxf.jaxrs.ext.multipart.Attachment;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.ws.rs.core.Response;
 import java.io.*;
 import java.lang.reflect.Method;
-import java.nio.file.AccessDeniedException;
-import java.sql.Timestamp;
 import java.util.List;
 import java.util.UUID;
 
 @Service("userService")
 public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implements UserService {
+
+    @Autowired
+    private CommentMapper commentMapper;
+    @Autowired
+    private FavoriteMapper favoriteMapper;
+    @Autowired
+    private SubscribeMapper subscribeMapper;
+    @Autowired
+    private VideoMapper videoMapper;
 
 	@Override
 	public IDInfo create(User entity) throws Exception {
@@ -38,7 +46,12 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
 		return mapper.selectUserById(id);
 	}
 
-	@Override
+    @Override
+    public Admin getAdminById(String id) {
+        return mapper.selectAdminById(id);
+    }
+
+    @Override
 	public List<UserEx> getUsers(String mineId, int pstart, int psize) {
 		if (mineId.equals("all")) {
 			return mapper.selectUsers(pstart, psize);
@@ -55,6 +68,20 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
     @Override
     public void changePassword(String id, String pwd) {
         mapper.updatePassword(id, pwd);
+    }
+
+    @Override
+    public void changeAdminPassword(String id, String pwd) {
+        mapper.updateAdminPassword(id, pwd);
+    }
+
+    @Override
+    public void deleteAllData(User user) {
+        commentMapper.deleteByUID(user.getId());
+        favoriteMapper.deleteByUID(user.getId());
+        subscribeMapper.deleteByUID(user.getId());
+        videoMapper.deleteByUID(user.getId());
+        mapper.delete(user);
     }
 
     @Override

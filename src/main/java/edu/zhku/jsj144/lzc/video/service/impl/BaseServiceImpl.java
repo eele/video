@@ -20,17 +20,22 @@ public class BaseServiceImpl<enT, mapperT> implements BaseService<enT, mapperT> 
 	public IDInfo create(enT entity) throws Exception {
 		// TODO Auto-generated method stub
 		String eid = UUID.randomUUID().toString().replace("-", "");
-		Method getUid = entity.getClass().getMethod("getUid");
-        String uid = (String) getUid.invoke(entity);
-
-		Method setId = entity.getClass().getMethod("setId", String.class);
-		setId.invoke(entity, uid + eid);
-		try {
-			Method setDatetime = entity.getClass().getMethod("setDatetime", Timestamp.class);
-			setDatetime.invoke(entity, new Timestamp(System.currentTimeMillis()));
+        String uid = "";
+        try {
+            Method getUid = entity.getClass().getMethod("getUid");
+            uid = (String) getUid.invoke(entity);
 		} catch (NoSuchMethodException e) {
 
 		}
+
+        try {
+            Method setDatetime = entity.getClass().getMethod("setDatetime", Timestamp.class);
+            setDatetime.invoke(entity, new Timestamp(System.currentTimeMillis()));
+        } catch (NoSuchMethodException e) {
+
+        }
+		Method setId = entity.getClass().getMethod("setId", String.class);
+		setId.invoke(entity, uid + eid);
 		((BaseMapper<enT>) mapper).create(entity);
 		return new IDInfo(uid + eid);
 	}

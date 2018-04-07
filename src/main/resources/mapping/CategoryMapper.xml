@@ -8,6 +8,6 @@
 	<resultMap id="categoryMap" type="edu.zhku.jsj144.lzc.video.pojo.Category"/>
 
 	<select id="selectCategories" resultType="edu.zhku.jsj144.lzc.video.pojo.Category" resultMap="categoryMap">
-		select * from `category`
+		select * from `category` where name like #{name}
 	</select>
 </mapper>

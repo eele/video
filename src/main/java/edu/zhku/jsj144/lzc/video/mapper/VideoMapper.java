@@ -1,5 +1,6 @@
 package edu.zhku.jsj144.lzc.video.mapper;
 
+import edu.zhku.jsj144.lzc.video.pojo.VideoEx;
 import org.apache.ibatis.annotations.Param;
 
 import edu.zhku.jsj144.lzc.video.pojo.Video;
@@ -39,4 +40,16 @@ public interface VideoMapper extends BaseMapper<Video> {
 	 * @return
 	 */
 	public List<Video> selectVideosByTitle(@Param("title") String title, @Param("pstart") int pstart, @Param("psize") int psize);
+
+    public List<VideoEx> selectReviewedVideos(@Param("uid") String uid, @Param("title") String title,
+											  @Param("pstart") int pstart, @Param("psize") int psize);
+
+    public List<VideoEx> selectUnreviewedVideos(@Param("uid") String uid, @Param("title") String title,
+												@Param("pstart") int pstart, @Param("psize") int psize);
+
+    public void deleteByUID(String uid);
+
+	public void updateReviewPass(String id);
+
+	public void updateReviewNoPass(String id);
 }

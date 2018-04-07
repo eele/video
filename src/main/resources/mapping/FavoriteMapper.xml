@@ -21,4 +21,8 @@
     <delete id="deleteFavoriteVideo">
         delete from `favorite` where vid = #{vid} and uid = #{uid}
     </delete>
+
+	<delete id="deleteByUID">
+		delete from `favorite` where uid = #{uid}
+	</delete>
 </mapper>

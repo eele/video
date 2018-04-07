@@ -11,4 +11,7 @@
 		select id from `subscribe` where uid = #{uid} and s_uid = #{s_uid}
 	</select>
 
+	<delete id="deleteByUID">
+		delete from `subscribe` where uid = #{uid}
+	</delete>
 </mapper>

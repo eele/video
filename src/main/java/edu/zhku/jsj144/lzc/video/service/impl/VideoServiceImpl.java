@@ -2,6 +2,7 @@ package edu.zhku.jsj144.lzc.video.service.impl;
 
 import javax.jws.WebService;
 
+import edu.zhku.jsj144.lzc.video.pojo.VideoEx;
 import edu.zhku.jsj144.lzc.video.util.TokenUtil;
 import org.springframework.stereotype.Service;
 
@@ -30,22 +31,41 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
 
     @Override
 	public List<Video> getUploadedVideosByUID(String uid, int pstart, int psize) {
-		return super.mapper.selectUploadedVideosByUID(uid, pstart, psize);
+		return mapper.selectUploadedVideosByUID(uid, pstart, psize);
 	}
 
-	@Override
+    @Override
+    public List<VideoEx> getReviewedVideos(String uid, String title, int pstart, int psize) {
+        return mapper.selectReviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
+    }
+
+    @Override
+    public List<VideoEx> getUnreviewedVideos(String uid, String title, int pstart, int psize) {
+        return mapper.selectUnreviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
+    }
+
+    @Override
 	public List<Video> getVideosByCID(String cid, int pstart, int psize) {
-		return super.mapper.selectVideosByCID(cid, pstart, psize);
+		return mapper.selectVideosByCID(cid, pstart, psize);
 	}
 
     @Override
     public Video getOneVideo(String id) {
-        return super.mapper.selectVideo(id);
+        return mapper.selectVideo(id);
     }
 
     @Override
     public List<Video> searchVideos(String title, int pstart, int psize) {
         return mapper.selectVideosByTitle("%" + title + "%", pstart, psize);
+    }
+
+    @Override
+    public void setReviewPass(String id, boolean result) {
+	    if (result) {
+            mapper.updateReviewPass(id);
+        } else {
+            mapper.updateReviewNoPass(id);
+        }
     }
 
 

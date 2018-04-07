@@ -11,7 +11,7 @@ import java.util.List;
 public class CategoryServiceImpl extends BaseServiceImpl<Category, CategoryMapper> implements CategoryService {
 
     @Override
-    public List<Category> getCategories() {
-        return super.mapper.selectCategories();
+    public List<Category> getCategories(String name) {
+        return super.mapper.selectCategories("%" + name + "%");
     }
 }
