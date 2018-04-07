@@ -40,7 +40,12 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
 		return new IDInfo(uid);
 	}
 
-	@Override
+    @Override
+    public void updateInfo(User user) {
+        mapper.updateInfo(user.getId(), user.getUsername(), user.getDescription());
+    }
+
+    @Override
 	public User getUserById(String id) {
 		// TODO Auto-generated method stub
 		return mapper.selectUserById(id);

@@ -54,4 +54,10 @@
         update `admin` set password = #{pwd}
         where id = #{id}
     </update>
+
+    <update id="updateInfo">
+        update `user`
+        set username = #{username}, description = #{description}
+        where id = #{id}
+    </update>
 </mapper>

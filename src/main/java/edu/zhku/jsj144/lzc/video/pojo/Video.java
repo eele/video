@@ -20,8 +20,8 @@ public class Video {
 	private String cid; // 类别ID
 	@FormParam("description")
 	private String description; // 描述
-	@FormParam("permission")
-	private Boolean permission = false; // 权限
+//	@FormParam("permission")
+//	private Boolean permission = false; // 权限
 	private int verify = 0; // 审核验证
 	private Timestamp datetime; // 日期
 
@@ -65,13 +65,13 @@ public class Video {
 		this.description = description;
 	}
 
-	public Boolean getPermission() {
-		return permission;
-	}
+//	public Boolean getPermission() {
+//		return permission;
+//	}
 
-	public void setPermission(Boolean permission) {
-		this.permission = permission;
-	}
+//	public void setPermission(Boolean permission) {
+//		this.permission = permission;
+//	}
 
 	public int getVerify() {
 		return verify;

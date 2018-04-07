@@ -26,4 +26,6 @@ public interface UserMapper extends BaseMapper<User> {
 	public void updatePassword(@Param("id") String id, @Param("pwd") String pwd);
 
 	public void updateAdminPassword(@Param("id") String id, @Param("pwd") String pwd);
+
+    public void updateInfo(@Param("id") String id, @Param("username") String username, @Param("description") String description);
 }

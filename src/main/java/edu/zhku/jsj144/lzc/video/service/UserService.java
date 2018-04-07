@@ -16,6 +16,11 @@ import java.util.List;
 @Path("users")
 public interface UserService {
 
+    @PUT
+    @Path("/{id}/info")
+    @RequireToken(ownResourceOnly = true)
+    public void updateInfo(@BeanParam User user);
+
 	@GET
 	@Path("/{id}")
 	public User getUserById(@PathParam("id") String id);
