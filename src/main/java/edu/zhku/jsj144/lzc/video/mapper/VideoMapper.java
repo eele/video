@@ -52,4 +52,6 @@ public interface VideoMapper extends BaseMapper<Video> {
 	public void updateReviewPass(String id);
 
 	public void updateReviewNoPass(String id);
+
+	public void updateReviewWaiting(String vid);
 }

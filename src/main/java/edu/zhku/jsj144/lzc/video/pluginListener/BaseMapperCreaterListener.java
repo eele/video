@@ -117,7 +117,7 @@ public class BaseMapperCreaterListener implements ServletContextListener {
 		String genericType = ctClass.getGenericSignature();
 		genericType = genericType.substring(genericType.lastIndexOf("/") + 1, genericType.length() - 3);
 		CtClass entityClass = classPool.get("edu.zhku.jsj144.lzc.video.pojo." + genericType);
-		StringBuilder sqlb = new StringBuilder("insert into " + genericType + "(");
+		StringBuilder sqlb = new StringBuilder("insert into " + toLowerCaseFirstOne(genericType) + "(");
 		for (CtField f: entityClass.getDeclaredFields()) {
 			sqlb.append(f.getName() + ",");
 		}
@@ -142,7 +142,7 @@ public class BaseMapperCreaterListener implements ServletContextListener {
 		String genericType = ctClass.getGenericSignature();
 		genericType = genericType.substring(genericType.lastIndexOf("/") + 1, genericType.length() - 3);
 		CtClass entityClass = classPool.get("edu.zhku.jsj144.lzc.video.pojo." + genericType);
-		StringBuilder sqlb = new StringBuilder("update " + genericType + " set ");
+		StringBuilder sqlb = new StringBuilder("update " + toLowerCaseFirstOne(genericType) + " set ");
 		for (CtField f: entityClass.getDeclaredFields()) {
 			if (! f.getName().equals("datetime")) {
                 sqlb.append(f.getName() + "=").append("#{" + f.getName() + "},");
@@ -163,8 +163,15 @@ public class BaseMapperCreaterListener implements ServletContextListener {
 	private String createDeleteSql(ClassPool classPool, CtClass ctClass) throws NotFoundException {
 		String genericType = ctClass.getGenericSignature();
 		genericType = genericType.substring(genericType.lastIndexOf("/") + 1, genericType.length() - 3);
-		StringBuilder sqlb = new StringBuilder("delete from " + genericType + " where id=#{id}") ;
+		StringBuilder sqlb = new StringBuilder("delete from " + toLowerCaseFirstOne(genericType) + " where id=#{id}") ;
 		return sqlb.toString();
+	}
+
+	private String toLowerCaseFirstOne(String s){
+		if(Character.isLowerCase(s.charAt(0)))
+			return s;
+		else
+			return (new StringBuilder()).append(Character.toLowerCase(s.charAt(0))).append(s.substring(1)).toString();
 	}
 	
 }

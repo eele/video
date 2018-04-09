@@ -21,6 +21,9 @@ public interface VideoService {
     @WebMethod
 	public String checkToken(String token);
 
+    @WebMethod
+    public void setUploadFinished(String vid);
+
 	@GET
     @Path("/p/v")
     @RequireToken

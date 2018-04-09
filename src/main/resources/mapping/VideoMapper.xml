@@ -49,4 +49,8 @@
     <update id="updateReviewNoPass">
         update `video` set verify = -1 where id= #{id}
     </update>
+
+    <update id="updateReviewWaiting">
+        update `video` set verify = 0 where id= #{id}
+    </update>
 </mapper>

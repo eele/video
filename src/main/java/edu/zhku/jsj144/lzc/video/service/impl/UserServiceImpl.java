@@ -7,10 +7,15 @@ import edu.zhku.jsj144.lzc.video.pojo.User;
 import edu.zhku.jsj144.lzc.video.pojo.UserEx;
 import edu.zhku.jsj144.lzc.video.service.UserService;
 import org.apache.cxf.jaxrs.ext.multipart.Attachment;
+import org.apache.cxf.transport.http.AbstractHTTPDestination;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.core.Response;
+import javax.xml.ws.WebServiceContext;
+import javax.xml.ws.handler.MessageContext;
 import java.io.*;
 import java.lang.reflect.Method;
 import java.util.List;
@@ -28,7 +33,20 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
     @Autowired
     private VideoMapper videoMapper;
 
-	@Override
+    private WebServiceContext context;
+
+    private String portraitPath;
+
+    @Resource
+    public void setContext(WebServiceContext context) {
+        this.context = context;
+        MessageContext ctx = context.getMessageContext();
+        HttpServletRequest request = (HttpServletRequest) ctx
+                .get(AbstractHTTPDestination.HTTP_REQUEST);
+        portraitPath = request.getParameter("portraitPath");
+    }
+
+    @Override
 	public IDInfo create(User entity) throws Exception {
 		// TODO Auto-generated method stub
 		String uid = UUID.randomUUID().toString().replace("-", "");
@@ -92,12 +110,12 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
     @Override
     public void uploadPortrait(String id, Attachment image) throws IOException {
         InputStream ins = image.getDataHandler().getInputStream();
-        writeToFile(ins, "d:/" + id);
+        writeToFile(ins, portraitPath + "/" + id);
     }
 
     @Override
     public Response getPortrait(String id) {
-        File file = new File("d:/" + id);
+        File file = new File(portraitPath + "/" + id);
         if (file.exists()) {
             Response.ResponseBuilder response = Response.ok(file);
             response.header("Content-Disposition", "attachment;filename='img'");

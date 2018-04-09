@@ -4,12 +4,15 @@ import javax.jws.WebService;
 
 import edu.zhku.jsj144.lzc.video.pojo.VideoEx;
 import edu.zhku.jsj144.lzc.video.util.TokenUtil;
+import org.apache.cxf.endpoint.Client;
+import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
 import org.springframework.stereotype.Service;
 
 import edu.zhku.jsj144.lzc.video.mapper.VideoMapper;
 import edu.zhku.jsj144.lzc.video.pojo.Video;
 import edu.zhku.jsj144.lzc.video.service.VideoService;
 
+import java.io.File;
 import java.util.List;
 
 @WebService(
@@ -19,10 +22,25 @@ import java.util.List;
 @Service("videoService")
 public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implements VideoService {
 
-	@Override
+    private JaxWsDynamicClientFactory clientFactory = JaxWsDynamicClientFactory.newInstance();
+
+    @Override
+    public void deleteByID(Video entity) throws Exception {
+        super.deleteByID(entity);
+        String url = url = "http://localhost:8088/video/service/p?wsdl";
+        Client dynamicClient = clientFactory.createClient(url);
+        dynamicClient.invoke("deleteVideoFile", entity.getId());
+    }
+
+    @Override
 	public String checkToken(String token) {
 		return TokenUtil.checkToken(token);
 	}
+
+    @Override
+    public void setUploadFinished(String vid) {
+        mapper.updateReviewWaiting(vid);
+    }
 
     @Override
     public void verifyToken() {

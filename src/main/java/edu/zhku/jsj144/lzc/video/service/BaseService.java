@@ -39,6 +39,6 @@ public interface BaseService<enT, mapperT> {
 	@DELETE
 	@Path("/{id}")
     @RequireToken(ownResourceOnly = true)
-	public void deleteByID(@BeanParam enT entity);
+	public void deleteByID(@BeanParam enT entity) throws Exception;
 
 }

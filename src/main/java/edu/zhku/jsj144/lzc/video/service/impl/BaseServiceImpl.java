@@ -47,7 +47,7 @@ public class BaseServiceImpl<enT, mapperT> implements BaseService<enT, mapperT> 
 	}
 
 	@Override
-	public void deleteByID(enT entity) {
+	public void deleteByID(enT entity) throws Exception {
 		// TODO Auto-generated method stub
 		((BaseMapper<enT>) mapper).delete(entity);
 	}

@@ -17,12 +17,14 @@ import java.lang.reflect.Method;
 public class ExceptionHandler implements ExceptionMapper<Exception> {
 
     public ExceptionInfo handleException(DataIntegrityViolationException e) {
+    	e.printStackTrace();
         return new ExceptionInfo()
                 .httpStatus(Response.Status.INTERNAL_SERVER_ERROR)
                 .status("DBERR").msg("数据存取异常");
     }
 
     public ExceptionInfo handleException(BadSqlGrammarException e) {
+        e.printStackTrace();
         return new ExceptionInfo()
                 .httpStatus(Response.Status.INTERNAL_SERVER_ERROR)
                 .status("DBERR").msg("数据库异常");
