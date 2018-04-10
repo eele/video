@@ -22,7 +22,7 @@ public class Video {
 	private String description; // 描述
 //	@FormParam("permission")
 //	private Boolean permission = false; // 权限
-	private int verify = 0; // 审核验证
+	private int verify = 2; // 审核验证
 	private Timestamp datetime; // 日期
 
 	public String getId() {

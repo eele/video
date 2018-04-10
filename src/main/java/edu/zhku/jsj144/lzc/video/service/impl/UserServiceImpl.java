@@ -33,18 +33,18 @@ public class UserServiceImpl extends BaseServiceImpl<User, UserMapper> implement
     @Autowired
     private VideoMapper videoMapper;
 
-    private WebServiceContext context;
+//    private WebServiceContext context;
 
-    private String portraitPath;
-
-    @Resource
-    public void setContext(WebServiceContext context) {
-        this.context = context;
-        MessageContext ctx = context.getMessageContext();
-        HttpServletRequest request = (HttpServletRequest) ctx
-                .get(AbstractHTTPDestination.HTTP_REQUEST);
-        portraitPath = request.getParameter("portraitPath");
-    }
+    private String portraitPath = "/usr/local/tomcat/portraits";
+//
+//    @Resource
+//    public void setContext(WebServiceContext context) {
+//        this.context = context;
+//        MessageContext ctx = context.getMessageContext();
+//        HttpServletRequest request = (HttpServletRequest) ctx
+//                .get(AbstractHTTPDestination.HTTP_REQUEST);
+//        portraitPath = request.getParameter("portraitPath");
+//    }
 
     @Override
 	public IDInfo create(User entity) throws Exception {
