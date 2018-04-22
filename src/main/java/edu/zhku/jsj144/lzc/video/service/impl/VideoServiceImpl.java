@@ -54,12 +54,16 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
 
     @Override
     public List<VideoEx> getReviewedVideos(String uid, String title, int pstart, int psize) {
-        return mapper.selectReviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
+        List<VideoEx> videoExList =  mapper.selectReviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
+        videoExList.get(0).setNum(mapper.selectReviewedVideoNum("%" + uid + "%", "%" + title + "%", pstart, psize));
+        return videoExList;
     }
 
     @Override
     public List<VideoEx> getUnreviewedVideos(String uid, String title, int pstart, int psize) {
-        return mapper.selectUnreviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
+        List<VideoEx> videoExList =  mapper.selectUnreviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
+        videoExList.get(0).setNum(mapper.selectUnreviewedVideoNum("%" + uid + "%", "%" + title + "%", pstart, psize));
+        return videoExList;
     }
 
     @Override

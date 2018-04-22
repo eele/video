@@ -53,4 +53,14 @@
     <update id="updateReviewWaiting">
         update `video` set verify = 0 where id= #{id}
     </update>
+
+    <select id="selectReviewedVideoNum">
+        select count(*) from `video`, `category`, `user`
+        where `video`.cid = `category`.id and `video`.uid = `user`.id and verify = 1 and `video`.uid like #{uid} and title like #{title}
+    </select>
+
+    <select id="selectUnreviewedVideoNum">
+        select count(*) from `video`, `category`, `user`
+        where `video`.cid = `category`.id and `video`.uid = `user`.id and verify = 0 and `video`.uid like #{uid} and title like #{title}
+    </select>
 </mapper>

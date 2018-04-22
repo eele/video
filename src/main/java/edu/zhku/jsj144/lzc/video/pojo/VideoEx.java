@@ -4,6 +4,7 @@ public class VideoEx extends Video {
 
     private String username;
     private String category;
+    private long num;
 
     public String getUsername() {
         return username;
@@ -19,5 +20,13 @@ public class VideoEx extends Video {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public long getNum() {
+        return num;
+    }
+
+    public void setNum(long num) {
+        this.num = num;
     }
 }
