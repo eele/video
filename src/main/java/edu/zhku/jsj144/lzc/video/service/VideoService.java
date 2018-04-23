@@ -59,4 +59,5 @@ public interface VideoService {
     @PUT
     @Path("/{id}/review")
     public void setReviewPass(@PathParam("id") String id, @FormParam("result") boolean result);
+
 }

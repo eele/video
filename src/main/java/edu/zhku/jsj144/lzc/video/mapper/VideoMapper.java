@@ -55,9 +55,7 @@ public interface VideoMapper extends BaseMapper<Video> {
 
 	public void updateReviewWaiting(String vid);
 
-	public long selectReviewedVideoNum(@Param("uid") String uid, @Param("title") String title,
-							   @Param("pstart") int pstart, @Param("psize") int psize);
+	public long selectReviewedVideoNum(@Param("uid") String uid, @Param("title") String title);
 
-	public long selectUnreviewedVideoNum(@Param("uid") String uid, @Param("title") String title,
-									   @Param("pstart") int pstart, @Param("psize") int psize);
+	public long selectUnreviewedVideoNum(@Param("uid") String uid, @Param("title") String title);
 }

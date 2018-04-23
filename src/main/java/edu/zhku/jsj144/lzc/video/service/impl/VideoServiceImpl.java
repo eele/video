@@ -6,6 +6,7 @@ import edu.zhku.jsj144.lzc.video.pojo.VideoEx;
 import edu.zhku.jsj144.lzc.video.util.TokenUtil;
 import org.apache.cxf.endpoint.Client;
 import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import edu.zhku.jsj144.lzc.video.mapper.VideoMapper;
@@ -55,14 +56,14 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
     @Override
     public List<VideoEx> getReviewedVideos(String uid, String title, int pstart, int psize) {
         List<VideoEx> videoExList =  mapper.selectReviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
-        videoExList.get(0).setNum(mapper.selectReviewedVideoNum("%" + uid + "%", "%" + title + "%", pstart, psize));
+        videoExList.get(0).setNum(mapper.selectReviewedVideoNum("%" + uid + "%", "%" + title + "%"));
         return videoExList;
     }
 
     @Override
     public List<VideoEx> getUnreviewedVideos(String uid, String title, int pstart, int psize) {
         List<VideoEx> videoExList =  mapper.selectUnreviewedVideos("%" + uid + "%", "%" + title + "%", pstart, psize);
-        videoExList.get(0).setNum(mapper.selectUnreviewedVideoNum("%" + uid + "%", "%" + title + "%", pstart, psize));
+        videoExList.get(0).setNum(mapper.selectUnreviewedVideoNum("%" + uid + "%", "%" + title + "%"));
         return videoExList;
     }
 
@@ -89,6 +90,5 @@ public class VideoServiceImpl extends BaseServiceImpl<Video, VideoMapper> implem
             mapper.updateReviewNoPass(id);
         }
     }
-
 
 }
