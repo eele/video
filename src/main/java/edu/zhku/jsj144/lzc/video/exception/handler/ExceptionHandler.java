@@ -6,6 +6,7 @@ import edu.zhku.jsj144.lzc.video.pojo.ExceptionInfo;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureException;
+import org.apache.log4j.Logger;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.BadSqlGrammarException;
 
@@ -16,15 +17,17 @@ import java.lang.reflect.Method;
 
 public class ExceptionHandler implements ExceptionMapper<Exception> {
 
+	private static Logger logger = Logger.getLogger(ExceptionHandler.class);
+
     public ExceptionInfo handleException(DataIntegrityViolationException e) {
-    	e.printStackTrace();
+		logger.error(e.getMessage(), e);
         return new ExceptionInfo()
                 .httpStatus(Response.Status.INTERNAL_SERVER_ERROR)
                 .status("DBERR").msg("数据存取异常");
     }
 
     public ExceptionInfo handleException(BadSqlGrammarException e) {
-        e.printStackTrace();
+		logger.error(e.getMessage(), e);
         return new ExceptionInfo()
                 .httpStatus(Response.Status.INTERNAL_SERVER_ERROR)
                 .status("DBERR").msg("数据库异常");
@@ -63,7 +66,7 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
     @Override
 	public Response toResponse(Exception e) {
 		// TODO Auto-generated method stub
-		e.printStackTrace();
+		logger.error(e.getMessage(), e);
 		ExceptionInfo exceptionInfo = null;
 		Method[] methods = getClass().getDeclaredMethods();
 		int flag = 0;
@@ -74,7 +77,7 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
 					exceptionInfo = (ExceptionInfo) m.invoke(this, e);
 				} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e1) {
 					// TODO Auto-generated catch block
-					e1.printStackTrace();
+					logger.error(e.getMessage(), e);
 				}
 				flag = 1;
 				break;
