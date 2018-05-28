@@ -42,7 +42,7 @@
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 	</bean>
 
-	<!-- DAO接口所在包名，Spring会自动查找其下的类 ,包下的类需要使用@MapperScan注解,否则容器注入会失败 -->
+	<!-- DAO接口所在包名，Spring会自动查找其下的类 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="edu.zhku.jsj144.lzc.video.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
